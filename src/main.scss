@@ -1,0 +1,286 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary:#1BAAE1;
+$info:#E0EAEC;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// @font-face {
+//     font-family: 'Glyphicons Halflings';
+//     src: url('../fonts/glyphicons-halflings-regular.eot');
+//     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+//         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+//         url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+// }
+
+// Then add additional custom code here
+
+body {
+    background-image: url('/Images/Background.jpg');
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ot-sec {
+    background-image: url('/Images/bg-Secondary.png');
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+
+/*  Rollover image styles  */
+.figure {
+    position: relative;
+    width: 360px;
+    /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+}
+
+.figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.figure:hover img.Sirv.image-hover {
+    opacity: 1;
+}
+
+.btn:hover {
+    background-color: black;
+    border-color: black;
+}
+
+// .bt-ot:hover{
+//     border-color: black;
+//     background-color: transparent;
+//     color: black !important;
+// }
+
+.bt-ot {
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+
+
+    &::after {
+        content: url("/Images/link.png");
+        font-family: 'bootstrap-icons';
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        left: 80%;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transform: translate(-50%, -40%);
+
+    }
+
+    &:hover {
+        border-color: black;
+        background-color: transparent;
+        color: black !important;
+        text-transform: translate(-70%, -50%);
+
+
+        &::after {
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    }
+
+
+}
+
+// .slides {
+//     display: inline-flex;
+//     overflow: hidden;
+//     height: 40px;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .words {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     transform: translateY(100%);
+//     animation: slide-up 9s ease infinite;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// @keyframes slide-up {
+
+//     0%{
+//         transform: translateY(0%);
+//     }
+
+//     50%{
+//         transform: translateY(0%);
+//     }
+
+//     100% {
+//         transform: translateY(-100%);
+//     }
+// }
+
+.home-text {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+}
+
+.home-text h1 {
+    color: #000000;
+    font-size: 65px;
+    color: #000;
+    line-height: 46px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 5px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 65px;
+    color: #000;
+    line-height: 46px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.home-text p {
+    margin: 0;
+    overflow: hidden;
+}
+
+.home-text p span {
+    font-size: 65px;
+    color: #1BAAE1;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 46px;
+    display: none;
+    margin-right: 10px;
+    padding: 5px 5px 5px 0;
+}
+
+.home-text p span.text-in {
+    display: block;
+    padding: 16px 0;
+    animation: textIn .7s ease;
+}
+
+.home-text p span.text-out {
+    animation: textOut .7s ease;
+}
+
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes textOut {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+
+    }
+}
+
+input::-webkit-input-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+input:-ms-input-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+input::-moz-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+textarea::-ms-input-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+textarea::-moz-placeholder {
+    font-size: 12px !important;
+    color: #ffffff8b;
+    padding: 5px;
+}
+
+.form-control{
+    background-color: #ececec8b;
+}
+
+@keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .wave {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: wave-animation;
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
