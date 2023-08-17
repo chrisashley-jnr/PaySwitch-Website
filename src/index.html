@@ -11,135 +11,56 @@
 
 		<title>Document</title>
 	</head>
-	<body class="d-flex flex-column">
-		<div class="main vh-100 h-auto d-flex">
-			<div
-				class="left pt-3"
-				style="width: 70%; padding-left: 5%; padding-right: 5%;"
-			>
-				<div class="header" style="max-width: 100%; height: auto;">
-					<nav class="navbar navbar-expand-lg bg-body-transparent">
-						<div class="container-fluid">
-							<img
-								src="/Images/logo.png"
-								alt="logo-header"
-								style="height: 50px; margin-right: 25%;"
-							/>
+	<body class="d-flex flex-column ps-5 pe-5 ms-4 me-4">
+		<div class="header">
+			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 50px;"
+						/>
+					</a>
 
-							<div
-								class="collapse navbar-collapse float-end d-flex justify-content-between"
-								id="navbarSupportedContent"
-							>
-								<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-semibold">
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="/src/Products.html"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											Products
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a
-													class="dropdown-item fw-semibold d-flex gap-3 align-items-center p-3"
-													style="font-size: 16px;"
-													href="/src/payment-collection.html"
-												>
-													<img
-														src="/Images/dropdown-icons/Payment Information-bro.png"
-														style="height: 35px;"
-														alt="payment"
-													/>
-													Payment Collection</a
-												>
-											</li>
-											<li>
-												<a
-													class="dropdown-item fw-semibold d-flex gap-3 align-items-center p-3"
-													style="font-size: 16px;"
-													href="/src/checkout.html"
-												>
-													<img
-														src="/Images/dropdown-icons/Ecommerce checkout laptop-rafiki.png"
-														style="height: 35px;"
-														alt="checkout"
-													/>
-													Checkout</a
-												>
-											</li>
-											<!-- <li><hr class="dropdown-divider" /></li> -->
-											<li>
-												<a
-													class="dropdown-item fw-semibold d-flex gap-3 align-items-center p-3"
-													style="font-size: 16px;"
-													href="/src/ecommerce.html"
-												>
-													<img
-														src="/Images/dropdown-icons/Ecommerce web page-amico.png"
-														style="height: 35px;"
-														alt="ecommerce"
-													/>
-													Ecommerce</a
-												>
-											</li>
-											<li>
-												<a
-													class="dropdown-item fw-semibold d-flex gap-3 align-items-center p-3"
-													style="font-size: 16px;"
-													href="/src/.html"
-												>
-													<img
-														src="/Images/dropdown-icons/Customer relationship management-bro.png"
-														style="height: 35px;"
-														alt="services"
-													/>
-													Services</a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="/src/Careers.html">Careers</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="/src/Contact.html">Contact</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="/src/saas.html">Saas</a>
-									</li>
-								</ul>
-								<button
-									class="btn btn-primary text-white fw-bold"
-									type="button"
-									style="font-size: 14px; padding: 10px 20px;"
-								>
-									Become a Merchant
-								</button>
-							</div>
-						</div>
-					</nav>
-				</div>
-				<div class="main-content w-100">
-					<!-- <div
-						class="headline mt-5 pt-5 w-75 fw-bolder"
-						style="font-size: 65px;"
+					<div
+						class="collapse navbar-collapse justify-content-center flex-grow-0"
+						id="navbarSupportedContent"
 					>
-						<span class="slides">
-							<span class="words text-primary">
-								<span class="">Streamlined</span>
-								<span class="">Simplified</span>
-								<span class="">Seamless</span>
-							</span> </span
-						>Payments, <br />
-						Every Step Of The Way.
-					</div> -->
+						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="/src/Products.html">
+									Products
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/saas.html">Saas</a>
+							</li>
+						</ul>
+					</div>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 20px;"
+					>
+						Become a Merchant
+					</button>
+				</div>
+			</nav>
+		</div>
 
+		<div class="main vh-100 h-auto d-flex">
+			<div class="left pt-3" style="width: 60%;">
+				<div class="main-content w-100">
 					<div class="row mt-5 pt-5 w-75">
 						<div class="home-text">
 							<p class="animate-text">
@@ -148,12 +69,12 @@
 								<span>Seamless Payment,</span>
 							</p>
 						</div>
-						<h1 class="mt-3">Every Step of The Way.</h1>
+						<h1 class="mt-3" style="color: #011b33;">Every Step of The Way.</h1>
 					</div>
 
 					<div
-						class="subtext"
-						style="font-size: 18px; width: 60%; margin-top: 6%;"
+						class="subtext fw-semibold"
+						style="font-size: 18px; width: 65%; margin-top: 6%; color: #011b33;"
 					>
 						Experience hassle-free transactions with our seamless payment
 						solutions. Say goodbye to payment delays and complexities, and enjoy
@@ -161,99 +82,152 @@
 					</div>
 					<div class="buttons d-flex gap-3" style="margin-top: 6%;">
 						<button
-							class="btn btn-primary text-white fw-bold"
+							class="btn btn-primary rounded-0 text-white fw-bold"
 							type="button"
-							style="font-size: 16px; padding: 12px 55px;"
+							style="font-size: 16px; padding: 8px 45px;"
 						>
 							Get Started
 						</button>
 						<button
-							class="btn bt-ot btn-outline-primary text-primary fw-bold"
+							class="btn bt-ot rounded-0 btn-outline-primary text-primary fw-bold"
 							type="button"
-							style="font-size: 16px; padding: 12px 55px;"
+							style="font-size: 16px; padding: 8px 45px;"
 						>
-							View Docs
+							Integrate
 						</button>
 					</div>
 					<div class="brands" style="margin-top: 13%;">
 						<p>Brands that have embraced our platform:</p>
-						<div
-							class="brand-images d-flex align-items-center"
-							style="gap: 3%;"
-						>
-							<img
-								src="/Images/brand-logos/gcb-logo.png"
-								alt="gcb"
-								style="height: 95px;"
-							/>
-							<img
-								src="/Images/brand-logos/xDEpOxA9_400x400 1.png"
-								alt="melcom"
-								style="height: 95px;"
-							/>
-							<img
-								src="/Images/brand-logos/cbg-logo.png"
-								alt="cbg"
-								style="height: 95px;"
-							/>
-							<img
-								src="/Images/brand-logos/download 1.png"
-								alt="ghacem"
-								style="height: 88px;"
-							/>
-							<img
-								src="/Images/brand-logos/ecg-ghana 1.png"
-								alt="ecg"
-								style="height: 52px;"
-							/>
+						<div class="slider-container">
+							<div class="logo-slider">
+								<div class="logo">
+									<img src="/Images/brand-logos/ADB.png" alt="Logo 1" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/CBG.png" alt="Logo 2" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Compass.png" alt="Logo 3" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Enterprise.png" alt="Logo 4" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/FEDCO.png" alt="Logo 5" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/GCB.png" alt="Logo 6" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Melcom.png" alt="Logo 7" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Oriflame.png" alt="Logo 8" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/ADB.png" alt="Logo 1" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/CBG.png" alt="Logo 2" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Compass.png" alt="Logo 3" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Enterprise.png" alt="Logo 4" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/FEDCO.png" alt="Logo 5" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/GCB.png" alt="Logo 6" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Melcom.png" alt="Logo 7" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Oriflame.png" alt="Logo 8" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/ADB.png" alt="Logo 1" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/CBG.png" alt="Logo 2" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Compass.png" alt="Logo 3" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Enterprise.png" alt="Logo 4" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/FEDCO.png" alt="Logo 5" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/GCB.png" alt="Logo 6" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Melcom.png" alt="Logo 7" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Oriflame.png" alt="Logo 8" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+								</div>
+								<div class="logo">
+									<img src="/Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="right d-grid p-4 justify-content-center" style="width: 30%;">
-				<script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-				<div class="figure">
-					<img
-						class="Sirv image-main"
-						src="/Images/Flips/Property 1=Card_1.png"
-					/>
-					<img
-						class="Sirv image-hover"
-						data-src="/Images/Flips/Property 1=Card_1-1.png"
-					/>
+			<div
+				class="right d-grid p-4 justify-content-center align-content-center g-2 image-container"
+				style="width: 40%;"
+			>
+				<div class="z-2 position-absolute" style="padding-top: 6%;">
+					<span
+						><img
+							src="/Images/img-3.png"
+							alt=""
+							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
+					/></span>
 				</div>
-				<div class="figure">
-					<img
-						class="Sirv image-main"
-						src="/Images/Flips/Property 1=Card_2.png"
-						data-src="/Images/Flips/Property 1=Card_2.png"
-					/>
-					<img
-						class="Sirv image-hover"
-						data-src="/Images/Flips/Property 1=Card_2-1.png"
-					/>
+				<div
+					class="z-1 position-absolute"
+					style="padding-left: 2%; padding-top: 25%;"
+				>
+					<span
+						><img
+							src="/Images/img-2.png"
+							alt=""
+							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
+					/></span>
 				</div>
-				<div class="figure">
-					<img
-						class="Sirv image-main"
-						src="/Images/Flips/Property 1=Card_3.png"
-						data-src="/Images/Flips/Property 1=Card_3.png"
-					/>
-					<img
-						class="Sirv image-hover"
-						data-src="/Images/Flips/Property 1=Card_3-1.png"
-					/>
-				</div>
-				<div class="figure">
-					<img
-						class="Sirv image-main"
-						src="/Images/Flips/Property 1=Card_4.png"
-						data-src="/Images/Flips/Property 1=Card_4.png"
-					/>
-					<img
-						class="Sirv image-hover"
-						data-src="/Images/Flips/Property 1=Card_4-1.png"
-					/>
+				<div
+					class="z-0 position-absolute"
+					style="padding-left: 12%; padding-top: 15%;"
+				>
+					<span
+						><img
+							src="/Images/img-1.png"
+							alt=""
+							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
+					/></span>
 				</div>
 			</div>
 		</div>
@@ -286,6 +260,24 @@
 			}
 
 			window.onload = animateText;
+		</script>
+
+		<script>
+			const images = document.querySelectorAll(".right-img");
+			let currentIndex = 0;
+
+			function showNextImage() {
+				images[currentIndex].style.transition = "opacity 0.1s ease-out"; // Smooth transition
+				images[currentIndex].style.opacity = 0.1; // Reset opacity for current image
+
+				currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+
+				images[currentIndex].style.transition = "opacity 0.3s ease-in-out"; // Smooth transition
+				images[currentIndex].style.opacity = 1; // Display next image with full opacity
+			}
+
+			// Automatically switch images every 3 seconds
+			setInterval(showNextImage, 3000);
 		</script>
 	</body>
 </html>
