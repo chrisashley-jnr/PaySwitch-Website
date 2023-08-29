@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="./src/main.css" />
+		<link rel="stylesheet" href="../src/main.css" />
 
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -444,6 +444,7 @@
 									id="last-name"
 									placeholder="E.g Ashley"
 									name="LastName"
+									required
 								/>
 							</div>
 						</div>
@@ -455,6 +456,7 @@
 								id="email"
 								placeholder="E.g work@mail.com"
 								name="email"
+								required
 							/>
 						</div>
 						<div class="mb-3 d-grid">
@@ -467,6 +469,7 @@
 								id="phone"
 								class="form-control"
 								placeholder=" Eg. +233 012 345 6789"
+								required
 							/>
 						</div>
 
@@ -478,6 +481,7 @@
 								class="form-select form-control"
 								aria-label="Default select"
 								name="desc"
+								required
 							>
 								<option value="1">Placeholder</option>
 								<option value="2">Placeholder</option>
@@ -550,7 +554,7 @@
 					</div>
 				</div>
 				<div class="form-side">
-					<form action="send_email.php" method="POST" id="contact-form">
+					<form action="send_email.php" method="POST" id="contact-form1">
 						<div
 							class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
 						>
@@ -564,7 +568,7 @@
 									<input
 										type="text"
 										class="form-control"
-										id="first-name"
+										id="first-name-tablet"
 										placeholder="E.g Chris"
 										name="FirstName"
 										required
@@ -577,9 +581,10 @@
 									<input
 										type="text"
 										class="form-control"
-										id="last-name"
+										id="last-name-tablet"
 										placeholder="E.g Ashley"
 										name="LastName"
+										required
 									/>
 								</div>
 							</div>
@@ -588,9 +593,10 @@
 								<input
 									type="Email"
 									class="form-control"
-									id="email"
+									id="email-tablet"
 									placeholder="E.g work@mail.com"
 									name="email"
+									required
 								/>
 							</div>
 							<div class="mb-3 d-grid">
@@ -600,12 +606,13 @@
 								<input
 									name="phone"
 									type="text"
-									id="phone"
+									id="phone-tablet"
 									class="form-control"
 									placeholder=" Eg. +233 012 345 6789"
+									required
 								/>
 							</div>
-
+	
 							<div class="mb-3">
 								<label for="FormControlInput1" class="form-label">
 									Choose the closest description of your company</label
@@ -614,6 +621,7 @@
 									class="form-select form-control"
 									aria-label="Default select"
 									name="desc"
+									required
 								>
 									<option value="1">Placeholder</option>
 									<option value="2">Placeholder</option>
@@ -624,12 +632,12 @@
 							<input
 								class="btn btn-primary rounded-0 text-white fw-bold"
 								type="submit"
-								form="contact-form"
+								form="contact-form1"
 								style="font-size: 16px; padding: 8px 45px;"
 								value="submit"
 							/>
 							<script>
-
+	
 							</script>
 						
 						</div>
@@ -686,7 +694,7 @@
 						</div>
 					</div>
 				</div>
-				<form action="send_email.php" method="POST" id="contact-form">
+				<form action="send_email.php" method="POST" id="contact-form2">
 					<div
 						class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
 					>
@@ -700,7 +708,7 @@
 								<input
 									type="text"
 									class="form-control"
-									id="first-name"
+									id="first-name-phone"
 									placeholder="E.g Chris"
 									name="FirstName"
 									required
@@ -713,9 +721,10 @@
 								<input
 									type="text"
 									class="form-control"
-									id="last-name"
+									id="last-name-phone"
 									placeholder="E.g Ashley"
 									name="LastName"
+									required
 								/>
 							</div>
 						</div>
@@ -724,9 +733,10 @@
 							<input
 								type="Email"
 								class="form-control"
-								id="email"
+								id="email-phone"
 								placeholder="E.g work@mail.com"
 								name="email"
+								required
 							/>
 						</div>
 						<div class="mb-3 d-grid">
@@ -736,9 +746,10 @@
 							<input
 								name="phone"
 								type="text"
-								id="phone"
+								id="phone-phone"
 								class="form-control"
 								placeholder=" Eg. +233 012 345 6789"
+								required
 							/>
 						</div>
 
@@ -750,6 +761,7 @@
 								class="form-select form-control"
 								aria-label="Default select"
 								name="desc"
+								required
 							>
 								<option value="1">Placeholder</option>
 								<option value="2">Placeholder</option>
@@ -760,7 +772,7 @@
 						<input
 							class="btn btn-primary rounded-0 text-white fw-bold"
 							type="submit"
-							form="contact-form"
+							form="contact-form2"
 							style="font-size: 16px; padding: 8px 45px;"
 							value="submit"
 						/>

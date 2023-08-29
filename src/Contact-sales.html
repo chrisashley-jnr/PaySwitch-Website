@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="./src/main.css" />
+		<link rel="stylesheet" href="../src/main.css" />
 
-		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 		<link
 			rel="stylesheet"
@@ -43,7 +43,7 @@
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
-	
+
 						<div
 							class="collapse navbar-collapse justify-content-center flex-grow-0"
 							id="navbarSupportedContent"
@@ -68,7 +68,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Payments
 													</h6>
@@ -83,7 +83,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Transfers
 													</h6>
@@ -98,7 +98,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Payment Ecosystem
 													</h6>
@@ -131,7 +131,7 @@
 					</div>
 				</nav>
 			</div>
-	
+
 			<div class="header d-none d-lg-none d-md-block d-sm-none">
 				<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
 					<div class="container-fluid">
@@ -151,7 +151,7 @@
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
-	
+
 						<div
 							class="offcanvas offcanvas-end p-3 gap-5"
 							tabindex="-1"
@@ -164,7 +164,9 @@
 								data-bs-dismiss="offcanvas"
 								aria-label="Close"
 							></button>
-							<div class=" d-flex justify-content-between flex-column flex-grow-0 gap-5">
+							<div
+								class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
+							>
 								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
 									<li class="nav-item">
 										<a class="nav-link" href="/src/index.html">Home</a>
@@ -188,7 +190,7 @@
 															alt="drp1"
 															height="45"
 														/>
-	
+
 														<h6 class="fw-semibold" style="font-size: 15px;">
 															Payments
 														</h6>
@@ -203,7 +205,7 @@
 															alt="drp1"
 															height="45"
 														/>
-	
+
 														<h6 class="fw-semibold" style="font-size: 15px;">
 															Transfers
 														</h6>
@@ -218,7 +220,7 @@
 															alt="drp1"
 															height="45"
 														/>
-	
+
 														<h6 class="fw-semibold" style="font-size: 15px;">
 															Payment Ecosystem
 														</h6>
@@ -252,7 +254,7 @@
 					</div>
 				</nav>
 			</div>
-	
+
 			<div class="header d-md-none">
 				<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
 					<div class="container-fluid">
@@ -274,7 +276,7 @@
 						>
 							<span class="navbar-toggler-icon"></span>
 						</button>
-	
+
 						<div
 							class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
 							id="navbarSupportedContent"
@@ -302,7 +304,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Payments
 													</h6>
@@ -317,7 +319,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Transfers
 													</h6>
@@ -332,7 +334,7 @@
 														alt="drp1"
 														height="45"
 													/>
-	
+
 													<h6 class="fw-semibold" style="font-size: 15px;">
 														Payment Ecosystem
 													</h6>
@@ -368,7 +370,7 @@
 
 			<!-- Desktop -->
 			<div
-				class="p-5 mt-3 d-flex flex-row justify-content-center align-content-center overflow-y-auto  d-none d-lg-flex "
+				class="p-5 mt-3 d-flex flex-row justify-content-center align-content-center overflow-y-auto d-none d-lg-flex"
 			>
 				<div class="text-side w-50 pt-5 mt-5">
 					<p
@@ -396,8 +398,11 @@
 					</div>
 				</div>
 				<div class="form-side">
-					<div
+					<form
 						class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
+						action="send_sales_email.php"
+						method="POST"
+						id="contactSales-form"
 					>
 						<div class="name-fields d-flex gap-4">
 							<div class="mb-3">
@@ -405,8 +410,10 @@
 								<input
 									type="text"
 									class="form-control"
-									id="FormControlInput1"
+									id="eFormControlInput1"
 									placeholder="E.g Chris"
+									id="FirstName"
+									required
 								/>
 							</div>
 							<div class="mb-3">
@@ -418,6 +425,8 @@
 									class="form-control"
 									id="eFormControlInput1"
 									placeholder="E.g Ashley"
+									id="LastName"
+									required
 								/>
 							</div>
 						</div>
@@ -428,6 +437,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g work@mail.com"
+								id="email"
+								required
 							/>
 						</div>
 						<div class="mb-3 d-grid">
@@ -440,6 +451,8 @@
 								id="phone"
 								class="form-control"
 								placeholder=" Eg. +233 012 345 6789"
+								id="phone"
+								required
 							/>
 						</div>
 
@@ -452,6 +465,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g Company-website.com"
+								id="website"
+								required
 							/>
 						</div>
 						<div class="mb-3">
@@ -461,6 +476,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="size"
+								required
 							>
 								<option value="1">Select Company Size</option>
 								<option value="2">1-99</option>
@@ -476,6 +493,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="pVolume"
+								required
 							>
 								<option value="1">Select a monthly amount</option>
 								<option value="2">Less than GHS 5000</option>
@@ -493,7 +512,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									telaPAY
@@ -504,7 +523,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									PayLink & PayQR
@@ -515,7 +534,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Bulk Transfer
@@ -526,7 +545,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Remittance Transfer
@@ -537,7 +556,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Other
@@ -550,19 +569,19 @@
 							>
 							<textarea
 								class="form-control"
-								id="exampleFormControlTextarea1"
+								id="optional"
 								rows="3"
 								placeholder="Tell us more about your project, needs, and timeline."
 							></textarea>
 						</div>
-						<button
+						<input
 							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
+							type="submit"
+							form="contactSales-form"
 							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Submit
-						</button>
-					</div>
+							value="submit"
+						/>
+					</form>
 				</div>
 			</div>
 
@@ -596,20 +615,25 @@
 					</div>
 				</div>
 				<div class="form-side">
-					<div
+					<form
 						class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
+						action="send_sales_email.php"
+						method="POST"
+						id="contactSales-form2"
 					>
-						<div class="name-fields d-flex justify-content-between gap-4 w-100 gap-4">
-							<div class="mb-3 w-100">
+						<div class="name-fields d-flex gap-4">
+							<div class="mb-3">
 								<label for="FormControlInput1" class="form-label">First</label>
 								<input
 									type="text"
 									class="form-control"
-									id="FormControlInput1"
+									id="eFormControlInput1"
 									placeholder="E.g Chris"
+									id="FirstName"
+									required
 								/>
 							</div>
-							<div class="mb-3 w-100">
+							<div class="mb-3">
 								<label for="FormControlInput1" class="form-label"
 									>Last Name</label
 								>
@@ -618,6 +642,8 @@
 									class="form-control"
 									id="eFormControlInput1"
 									placeholder="E.g Ashley"
+									id="LastName"
+									required
 								/>
 							</div>
 						</div>
@@ -628,6 +654,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g work@mail.com"
+								id="email"
+								required
 							/>
 						</div>
 						<div class="mb-3 d-grid">
@@ -640,6 +668,8 @@
 								id="phone"
 								class="form-control"
 								placeholder=" Eg. +233 012 345 6789"
+								id="phone"
+								required
 							/>
 						</div>
 
@@ -652,6 +682,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g Company-website.com"
+								id="website"
+								required
 							/>
 						</div>
 						<div class="mb-3">
@@ -661,6 +693,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="size"
+								required
 							>
 								<option value="1">Select Company Size</option>
 								<option value="2">1-99</option>
@@ -676,6 +710,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="pVolume"
+								required
 							>
 								<option value="1">Select a monthly amount</option>
 								<option value="2">Less than GHS 5000</option>
@@ -693,7 +729,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									telaPAY
@@ -704,7 +740,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									PayLink & PayQR
@@ -715,7 +751,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Bulk Transfer
@@ -726,7 +762,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Remittance Transfer
@@ -737,7 +773,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Other
@@ -750,19 +786,19 @@
 							>
 							<textarea
 								class="form-control"
-								id="exampleFormControlTextarea1"
+								id="optional"
 								rows="3"
 								placeholder="Tell us more about your project, needs, and timeline."
 							></textarea>
 						</div>
-						<button
+						<input
 							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
+							type="submit"
+							form="contactSales-form2"
 							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Submit
-						</button>
-					</div>
+							value="submit"
+						/>
+					</form>
 				</div>
 			</div>
 
@@ -796,8 +832,11 @@
 					</div>
 				</div>
 				<div class="form-side">
-					<div
+					<form
 						class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
+						action="send_sales_email.php"
+						method="POST"
+						id="contactSales-form3"
 					>
 						<div class="name-fields d-flex gap-4">
 							<div class="mb-3">
@@ -805,8 +844,10 @@
 								<input
 									type="text"
 									class="form-control"
-									id="FormControlInput1"
+									id="eFormControlInput1"
 									placeholder="E.g Chris"
+									id="FirstName"
+									required
 								/>
 							</div>
 							<div class="mb-3">
@@ -818,6 +859,8 @@
 									class="form-control"
 									id="eFormControlInput1"
 									placeholder="E.g Ashley"
+									id="LastName"
+									required
 								/>
 							</div>
 						</div>
@@ -828,6 +871,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g work@mail.com"
+								id="email"
+								required
 							/>
 						</div>
 						<div class="mb-3 d-grid">
@@ -840,6 +885,8 @@
 								id="phone"
 								class="form-control"
 								placeholder=" Eg. +233 012 345 6789"
+								id="phone"
+								required
 							/>
 						</div>
 
@@ -852,6 +899,8 @@
 								class="form-control"
 								id="eFormControlInput1"
 								placeholder="E.g Company-website.com"
+								id="website"
+								required
 							/>
 						</div>
 						<div class="mb-3">
@@ -861,6 +910,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="size"
+								required
 							>
 								<option value="1">Select Company Size</option>
 								<option value="2">1-99</option>
@@ -876,6 +927,8 @@
 							<select
 								class="form-select form-control"
 								aria-label="Default select"
+								id="pVolume"
+								required
 							>
 								<option value="1">Select a monthly amount</option>
 								<option value="2">Less than GHS 5000</option>
@@ -893,7 +946,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									telaPAY
@@ -904,7 +957,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									PayLink & PayQR
@@ -915,7 +968,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Bulk Transfer
@@ -926,7 +979,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Remittance Transfer
@@ -937,7 +990,7 @@
 									class="form-check-input"
 									type="checkbox"
 									value=""
-									id="defaultCheck1"
+									id="products"
 								/>
 								<label class="form-check-label" for="defaultCheck1">
 									Other
@@ -950,19 +1003,19 @@
 							>
 							<textarea
 								class="form-control"
-								id="exampleFormControlTextarea1"
+								id="optional"
 								rows="3"
 								placeholder="Tell us more about your project, needs, and timeline."
 							></textarea>
 						</div>
-						<button
+						<input
 							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
+							type="submit"
+							form="contactSales-form3"
 							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Submit
-						</button>
-					</div>
+							value="submit"
+						/>
+					</form>
 				</div>
 			</div>
 		</div>

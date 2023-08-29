@@ -877,7 +877,23 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			const images = document.querySelectorAll(".right-img");
+			let currentIndex = 0;
 
+			function showNextImage() {
+				images[currentIndex].style.transition = "opacity 0.2s ease-out"; // Smooth transition
+				images[currentIndex].style.opacity = 0.1; // Reset opacity for current image
+
+				currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+
+				images[currentIndex].style.transition = "opacity 0.2s ease-in-out"; // Smooth transition
+				images[currentIndex].style.opacity = 1; // Display next image with full opacity
+			}
+
+			// Automatically switch images every 3 seconds
+			setInterval(showNextImage, 1500);
+		</script>
 		<script src="/src/animate.js/text1.js"></script>
 	</body>
 </html>

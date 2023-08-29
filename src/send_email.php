@@ -10,11 +10,14 @@ require  __DIR__ . '/../vendor/autoload.php';
 
 // if ($_SERVER["REQUEST_METHOD"] === "POST")
 // {
-      // $fname=$_POST["FirstName"];
-      // $fname=$_POST["LastName"];
-      // $fname=$_POST["email"];
-      // $fname=$_POST["phone"];
-      // $fname=$_POST["desc"];
+      try {
+            //code...
+   
+      $fname= trim($_POST["FirstName"]);
+      $lname= trim($_POST["LastName"]);
+      $email= trim($_POST["email"]);
+      $phone= trim($_POST["phone"]);
+      $desc= trim($_POST["desc"]);
       
 
     //PHPMailer Object
@@ -83,7 +86,9 @@ require  __DIR__ . '/../vendor/autoload.php';
 
     // $mail->addAddress("recepient1@example.com", "Recepient Name");
 
-    $mail->addAddress("chrisashley1061@gmail.com"); //Recipient name is optional
+    $receiverEmail = getenv("RECEIVER_EMAIL");
+
+    $mail->addAddress("ask@payswtich.com.gh"); //Recipient name is optional
 
     // $mail->addAddress($me); //Recipient name is optional
 
@@ -152,10 +157,10 @@ require  __DIR__ . '/../vendor/autoload.php';
             <tr>
                   <td class="container content">
                   <h1>General Support(PaySwitch Website)</h1>
-                  <p>Customer Name: Christian </p>
-                  <p>Phone:</p>
-                  <p>Email:</p>
-                  <p>Message:</p>
+                  <p>Customer Name: {$fname} {$lname}</p>
+                  <p>Phone: {$phone}</p>
+                  <p>Email: {$email}</p>
+                  <p>Message: {$desc}</p>
                   </td>
             </tr>
             
@@ -169,9 +174,15 @@ require  __DIR__ . '/../vendor/autoload.php';
     // $mail->AltBody = $body;
     
     $mail->send();
-    return [
-      'msg'=> 'email sent successfully'
-    ];
 
+    $appUrl = getenv("APP_URL");
+
+    header('Location: '.$appUrl.'/thankyou.php');
+
+ 
+} catch (\Throwable $th) {
+      header("Location: error_page.php");
+    exit;
+}
     // }
 
