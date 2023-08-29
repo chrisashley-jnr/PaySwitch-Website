@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./src/main.css" />
+
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<title>Document</title>
+	</head>
+	<body
+		class="ot-sec overflow-y-auto ps-lg-5 pe-lg-5 ps-md-3 pe-md-3 ps-2 pe-2 ms-4 me-4"
+	>
+		<div class="header d-none d-lg-block">
+			<nav
+				class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 50px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse justify-content-center flex-grow-0"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Products
+								</a>
+								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+									<li>
+										<a class="dropdown-item p-3" href="payments.html">
+											<div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/payments.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payments
+												</h6>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="transfers.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/transfers.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Transfers
+												</h6>
+											</div></a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payment-system.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/system.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payment Ecosystem
+												</h6>
+											</div></a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/saas.html">Saas</a>
+							</li>
+						</ul>
+					</div>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 20px;"
+					>
+						Become a Merchant
+					</button>
+				</div>
+			</nav>
+		</div>
+
+		<div class="header d-none d-lg-none d-md-block d-sm-none">
+			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 35px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler rounded-0 border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasExample"
+						aria-controls="offcanvasExample"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="offcanvas offcanvas-end p-3 gap-5"
+						tabindex="-1"
+						id="offcanvasExample"
+						aria-labelledby="offcanvasExampleLabel"
+					>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+						<div
+							class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
+						>
+							<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+								<li class="nav-item">
+									<a class="nav-link" href="/src/index.html">Home</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Products
+									</a>
+									<ul class="dropdown-menu rounded-0 border-0">
+										<li>
+											<a class="dropdown-item p-3" href="payments.html">
+												<div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/payments.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payments
+													</h6>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="transfers.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/transfers.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Transfers
+													</h6>
+												</div></a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="payment-system.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/system.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payment Ecosystem
+													</h6>
+												</div></a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Careers.html">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/saas.html">Saas</a>
+								</li>
+							</ul>
+							<button
+								class="btn btn-primary rounded-0 text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+							>
+								Become a Merchant
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="header d-md-none">
+			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 32px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler rounded-0 border-0"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold mt-2">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Products
+								</a>
+								<ul class="dropdown-menu rounded-0 border-0">
+									<li class="nav-item">
+										<a class="nav-link" href="/src/index.html">Home?</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payments.html">
+											<div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/payments.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payments
+												</h6>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="transfers.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/transfers.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Transfers
+												</h6>
+											</div></a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payment-system.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/system.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payment Ecosystem
+												</h6>
+											</div></a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/saas.html">Saas</a>
+							</li>
+						</ul>
+						<button
+							class="btn btn-primary rounded-0 text-white fw-bold"
+							type="button"
+							style="font-size: 14px; padding: 10px 20px;"
+						>
+							Become a Merchant
+						</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Desktop -->
+		<div class="content m-2 mt-4 d-none d-lg-flex flex-column">
+			<div
+				class="hero d-flex align-items-center justify-content-around flex-row mt-5"
+				style="padding-top: 6%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 60px;"
+					>
+						Innovations Driving Digital Payments and Inclusion
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						Welcome to the forefront of digital payment innovations, where
+						technology meets <br />
+						inclusivity to redefine the way we transact and empower everyone to
+						participate in <br />
+						the financial landscape.
+					</p>
+				</div>
+				<div class="image shadow">
+					<img src="/Images/innovations.jpg" alt="POS" style="height: 520px;" />
+				</div>
+			</div>
+			<div class="theTeller" style="padding-top: 10%;">
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						Creating Inclusive Digital Payment Solutions:
+					</p>
+				</div>
+				<div
+					class="offers d-flex align-items-center justify-content-between flex-row"
+					style="gap: 7%;"
+				>
+					<div class="api">
+						<p class="headline fw-bold fs-3">
+							1. Accessible Interfaces for All
+						</p>
+						<img
+							src="/Images/ux.jpg"
+							alt="api"
+							height="300"
+							class="shadow-sm"
+						/>
+						<p class="subtext w-75 mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							2. Language Diversity
+						</p>
+						<img
+							src="/Images/language.jpg"
+							alt="api"
+							height="300"
+							class="shadow-sm"
+						/>
+						<p class="subtext w-75 mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							3. Financial Literacy Initiatives
+						</p>
+						<img
+							src="/Images/financial.jpg"
+							alt="api"
+							height="300"
+							class="shadow-sm"
+						/>
+						<p class="subtext w-75 mt-4 fw-medium">
+							Inclusion goes beyond technology. We are committed to promoting
+							financial literacy through our initiatives, empowering individuals
+							to make informed decisions and participate confidently in the
+							digital economy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tablet -->
+		<div class="content m-2 mt-4 d-none d-md-block d-lg-none">
+			<div
+				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
+				style="padding-top: 6%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						Innovations Driving Digital Payments and Inclusion
+					</p>
+					<p class="subtext fs-6" style="font-weight: 450; color: #011b33;">
+						Welcome to the forefront of digital payment innovations, where
+						technology meets inclusivity to redefine the way we transact and
+						empower everyone to participate in the financial landscape.
+					</p>
+				</div>
+				<div class="image shadow">
+					<img src="/Images/innovations.jpg" alt="POS" style="height: 520px;" />
+				</div>
+			</div>
+			<div class="theTeller" style="padding-top: 10%;">
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 30px;"
+					>
+						Creating Inclusive Digital Payment Solutions:
+					</p>
+				</div>
+				<div
+					class="offers d-flex align-items-start justify-content-between flex-column"
+					style="gap: 7%;"
+				>
+					<div class="api">
+						<p class="headline fw-bold fs-3">
+							1. Accessible Interfaces for All
+						</p>
+						<img
+							src="/Images/ux.jpg"
+							alt="api"
+							height="450"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							2. Language Diversity
+						</p>
+						<img
+							src="/Images/language.jpg"
+							alt="api"
+							height="450"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							3. Financial Literacy Initiatives
+						</p>
+						<img
+							src="/Images/financial.jpg"
+							alt="api"
+							height="450"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							Inclusion goes beyond technology. We are committed to promoting
+							financial literacy through our initiatives, empowering individuals
+							to make informed decisions and participate confidently in the
+							digital economy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Phone -->
+		<div class="content m-2 mt-4 d-block d-md-none">
+			<div
+				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
+				style="padding-top: 6%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						Innovations Driving Digital Payments and Inclusion
+					</p>
+					<p class="subtext fs-6" style="font-weight: 450; color: #011b33;">
+						Welcome to the forefront of digital payment innovations, where
+						technology meets inclusivity to redefine the way we transact and
+						empower everyone to participate in the financial landscape.
+					</p>
+				</div>
+				<div class="image shadow">
+					<img src="/Images/innovations.jpg" alt="POS" style="height: 320px;" />
+				</div>
+			</div>
+			<div class="theTeller" style="padding-top: 10%;">
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 30px;"
+					>
+						Creating Inclusive Digital Payment Solutions:
+					</p>
+				</div>
+				<div
+					class="offers d-flex align-items-start justify-content-between flex-column"
+					style="gap: 7%;"
+				>
+					<div class="api">
+						<p class="headline fw-bold fs-3">
+							1. Accessible Interfaces for All
+						</p>
+						<img
+							src="/Images/ux.jpg"
+							alt="api"
+							height="350"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							2. Language Diversity
+						</p>
+						<img
+							src="/Images/language.jpg"
+							alt="api"
+							height="320"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							We believe that digital payments should be accessible to everyone.
+							Our inclusive interfaces are designed to accommodate individuals
+							with varying abilities, ensuring that no one is left behind.
+						</p>
+					</div>
+					<div class="dashboard">
+						<p class="headline fw-bold fs-3">
+							3. Financial Literacy Initiatives
+						</p>
+						<img
+							src="/Images/financial.jpg"
+							alt="api"
+							height="320"
+							class="shadow-sm"
+						/>
+						<p class="subtext mt-4 fw-medium">
+							Inclusion goes beyond technology. We are committed to promoting
+							financial literacy through our initiatives, empowering individuals
+							to make informed decisions and participate confidently in the
+							digital economy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

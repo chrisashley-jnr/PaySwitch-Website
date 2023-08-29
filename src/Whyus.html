@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="./src/main.css" />
 
-		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 		<title>Document</title>
 	</head>
@@ -17,8 +17,10 @@
 				class="left pt-3"
 				style="width: 100%; padding-left: 5%; padding-right: 5%;"
 			>
-			<div class="header">
-				<nav class="navbar navbar-expand-lg bg-body-transparent mt-4">
+			<div class="header d-none d-lg-block">
+				<nav
+					class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
+				>
 					<div class="container-fluid">
 						<a class="navbar-brand" href="#">
 							<img
@@ -27,19 +29,80 @@
 								style="height: 50px;"
 							/>
 						</a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 	
 						<div
 							class="collapse navbar-collapse justify-content-center flex-grow-0"
 							id="navbarSupportedContent"
 						>
 							<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-								<li class="nav-item">
-									<a class="nav-link" href="/src/index.html">Home</a>
-								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link" href="/src/Products.html">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
 										Products
 									</a>
+									<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+										<li>
+											<a class="dropdown-item p-3" href="payments.html">
+												<div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/payments.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payments
+													</h6>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="transfers.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/transfers.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Transfers
+													</h6>
+												</div></a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="payment-system.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/system.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payment Ecosystem
+													</h6>
+												</div></a
+											>
+										</li>
+									</ul>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
@@ -65,37 +128,269 @@
 					</div>
 				</nav>
 			</div>
+	
+			<div class="header d-none d-lg-none d-md-block d-sm-none">
+				<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img
+								src="/Images/logo.png"
+								alt="logo-header"
+								style="height: 35px;"
+							/>
+						</a>
+						<button
+							class="navbar-toggler rounded-0 border-0"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasExample"
+							aria-controls="offcanvasExample"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+	
+						<div
+							class="offcanvas offcanvas-end p-3 gap-5"
+							tabindex="-1"
+							id="offcanvasExample"
+							aria-labelledby="offcanvasExampleLabel"
+						>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+							<div class=" d-flex justify-content-between flex-column flex-grow-0 gap-5">
+								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+									<li class="nav-item">
+										<a class="nav-link" href="/src/index.html">Home</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Products
+										</a>
+										<ul class="dropdown-menu rounded-0 border-0">
+											<li>
+												<a class="dropdown-item p-3" href="payments.html">
+													<div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/payments.png"
+															alt="drp1"
+															height="45"
+														/>
+	
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payments
+														</h6>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="transfers.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/transfers.png"
+															alt="drp1"
+															height="45"
+														/>
+	
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Transfers
+														</h6>
+													</div></a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="payment-system.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/system.png"
+															alt="drp1"
+															height="45"
+														/>
+	
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payment Ecosystem
+														</h6>
+													</div></a
+												>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Careers.html">Careers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Contact.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/saas.html">Saas</a>
+									</li>
+								</ul>
+								<button
+									class="btn btn-primary rounded-0 text-white fw-bold"
+									type="button"
+									style="font-size: 14px; padding: 10px 20px;"
+								>
+									Become a Merchant
+								</button>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+	
+			<div class="header d-md-none">
+				<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img
+								src="/Images/logo.png"
+								alt="logo-header"
+								style="height: 32px;"
+							/>
+						</a>
+						<button
+							class="navbar-toggler rounded-0 border-0"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+	
+						<div
+							class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
+							id="navbarSupportedContent"
+						>
+							<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold mt-2">
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Products
+									</a>
+									<ul class="dropdown-menu rounded-0 border-0">
+										<li class="nav-item">
+											<a class="nav-link" href="/src/index.html">Home?</a>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="payments.html">
+												<div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/payments.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payments
+													</h6>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="transfers.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/transfers.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Transfers
+													</h6>
+												</div></a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="payment-system.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/system.png"
+														alt="drp1"
+														height="45"
+													/>
+	
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payment Ecosystem
+													</h6>
+												</div></a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Careers.html">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/saas.html">Saas</a>
+								</li>
+							</ul>
+							<button
+								class="btn btn-primary rounded-0 text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+							>
+								Become a Merchant
+							</button>
+						</div>
+					</div>
+				</nav>
+			</div>
 			</div>
 
 			<div
-				class="headline w-100 mt-5 ms-3 me-5 pt-5 overflow-y-scroll vh-100 d-flex flex-column align-items-center"
+				class="headline w-100 mt-5 ms-3 me-5 pt-5 overflow-y-scroll vh-100 pb-5 mb-5 d-flex flex-column align-items-center"
 				style="height: 40%;"
 			>
 				<p class="mb-3 fs-1 fw-bold text-center">Why Us?</p>
-				<p class="mb-5 pb-5 fs-6 fw-semibold text-center w-50">
+				<p class="mb-5 pb-5 fs-6 fw-semibold text-center w-75">
 					PaySwitch is a payment processing company that offers alternative
 					banking solutions to banks, financial institutions, organizations,
-					businesses, and individuals globally. 
-					Their integrated payment solutions enable the seamless circulation and
-					exchange of money and values across various transactions (C2C, C2B,
-					B2C, B2B). <br /><br />
+					businesses, and individuals globally. Their integrated payment
+					solutions enable the seamless circulation and exchange of money and
+					values across various transactions (C2C, C2B, B2C, B2B). <br /><br />
 					Their target market includes commercial banks, non-banking financial
 					institutions, telecommunication companies, and payment organizations
-					in Ghana and West Africa. 
-					PaySwitch serves a wide range of users, from startups to large
-					organizations, providing flexible systems, simplified programming
-					interfaces, and negotiated rates through their incubator Payments
-					program. 
-					Established in 2015, PaySwitch operates with world-class technology
-					platforms, certified compliance with data protection regulations, and
-					adherence to industry standards like ISO 27001 and PCI DSS. <br />
+					in Ghana and West Africa. PaySwitch serves a wide range of users, from
+					startups to large organizations, providing flexible systems,
+					simplified programming interfaces, and negotiated rates through their
+					incubator Payments program. Established in 2015, PaySwitch operates
+					with world-class technology platforms, certified compliance with data
+					protection regulations, and adherence to industry standards like ISO
+					27001 and PCI DSS. <br />
 					They operate under the Payment Systems and Service Act, 2019 (Act
 					987).
 				</p>
 				<p class="mb-3 fs-1 fw-bold text-center">Why choose Us?</p>
 				<p class="mb-3 fs-6 fw-semibold text-center">
 					By partnering with us, you can focus on growing your business while we
-					handle the complexities of payment processing, allowing you to <br />
+					handle the complexities of payment processing, allowing you to
 					save valuable time and resources.
 				</p>
 				<div class="row gap-5 justify-content-center mt-5 mb-5 pb-5">
@@ -224,7 +519,7 @@
 							</div>
 						</div>
 
-						<div class="col">
+						<!-- <div class="col">
 							<div class="card h-100 border-0 shadow-sm">
 								<img
 									src="/Images/Staff/Aaron1.png"
@@ -236,7 +531,7 @@
 									<p class="card-text">Chief Technology Officer</p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="col">
 							<div class="card h-100 border-0 shadow-sm">
 								<img

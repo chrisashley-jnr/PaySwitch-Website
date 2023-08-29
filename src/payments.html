@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./src/main.css" />
+
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<title>Document</title>
+	</head>
+	<body class="ot-sec overflow-y-auto ps-lg-5 pe-lg-5 ps-md-5 pe-md-5 ms-4 me-4">
+		<div class="header d-none d-lg-block">
+			<nav
+				class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 50px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse justify-content-center flex-grow-0"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Products
+								</a>
+								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+									<li>
+										<a class="dropdown-item p-3" href="payments.html">
+											<div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/payments.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payments
+												</h6>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="transfers.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/transfers.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Transfers
+												</h6>
+											</div></a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payment-system.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/system.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payment Ecosystem
+												</h6>
+											</div></a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/saas.html">Saas</a>
+							</li>
+						</ul>
+					</div>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 20px;"
+					>
+						Become a Merchant
+					</button>
+				</div>
+			</nav>
+		</div>
+
+		<div class="header d-none d-lg-none d-md-block d-sm-none">
+			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 35px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler rounded-0 border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasExample"
+						aria-controls="offcanvasExample"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="offcanvas offcanvas-end p-3 gap-5"
+						tabindex="-1"
+						id="offcanvasExample"
+						aria-labelledby="offcanvasExampleLabel"
+					>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+						<div
+							class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
+						>
+							<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+								<li class="nav-item">
+									<a class="nav-link" href="/src/index.html">Home</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Products
+									</a>
+									<ul class="dropdown-menu rounded-0 border-0">
+										<li>
+											<a class="dropdown-item p-3" href="payments.html">
+												<div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/payments.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payments
+													</h6>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="transfers.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/transfers.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Transfers
+													</h6>
+												</div></a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item p-3" href="payment-system.html"
+												><div class="d-flex align-items-center gap-2">
+													<img
+														src="/Images/dropdown-images/system.png"
+														alt="drp1"
+														height="45"
+													/>
+
+													<h6 class="fw-semibold" style="font-size: 15px;">
+														Payment Ecosystem
+													</h6>
+												</div></a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Careers.html">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/Contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/src/saas.html">Saas</a>
+								</li>
+							</ul>
+							<button
+								class="btn btn-primary rounded-0 text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+							>
+								Become a Merchant
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="header d-md-none">
+			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="/Images/logo.png"
+							alt="logo-header"
+							style="height: 32px;"
+						/>
+					</a>
+					<button
+						class="navbar-toggler rounded-0 border-0"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold mt-2">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Products
+								</a>
+								<ul class="dropdown-menu rounded-0 border-0">
+									<li class="nav-item">
+										<a class="nav-link" href="/src/index.html">Home?</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payments.html">
+											<div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/payments.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payments
+												</h6>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="transfers.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/transfers.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Transfers
+												</h6>
+											</div></a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item p-3" href="payment-system.html"
+											><div class="d-flex align-items-center gap-2">
+												<img
+													src="/Images/dropdown-images/system.png"
+													alt="drp1"
+													height="45"
+												/>
+
+												<h6 class="fw-semibold" style="font-size: 15px;">
+													Payment Ecosystem
+												</h6>
+											</div></a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/Contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/src/saas.html">Saas</a>
+							</li>
+						</ul>
+						<button
+							class="btn btn-primary rounded-0 text-white fw-bold"
+							type="button"
+							style="font-size: 14px; padding: 10px 20px;"
+						>
+							Become a Merchant
+						</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Desktop -->
+		<div class="content m-2 mt-4 d-none d-lg-flex flex-column">
+			<div
+				class="hero d-flex align-items-center justify-content-around flex-row mt-5"
+				style="padding-top: 6%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 60px;"
+					>
+						Simplify Your Transactions <br />
+						with Our Seamless Solutions:
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						Discover a world where payment delays and complexities are a thing
+						of the past. <br />
+						Embrace smooth, secure, and efficient financial transactions for a
+						hassle-free experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Get Started
+					</button>
+				</div>
+				<div class="image shadow">
+					<img src="/Images/Payments.jpg" alt="POS" style="height: 520px;" />
+				</div>
+			</div>
+			<div
+				class="theTeller d-flex align-items-center justify-content-around flex-row"
+				style="padding-top: 15%;"
+			>
+				<div class="image shadow-sm">
+					<img src="/Images/teller-API.png" alt="POS" style="height: 420px;" />
+				</div>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller API
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empowering Innovation:</strong> <br />
+						Harness the Potential of theTeller's Payment and Transfer Processing
+						API. <br />
+						Elevate Your Business with Streamlined Transactions, Backed by
+						Cutting-Edge<br />
+						Technology for a Future-Ready Payment Experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+			</div>
+			<div
+				class="theTeller d-flex align-items-center justify-content-around flex-row"
+				style="padding-top: 15%;"
+			>
+				<div class="image shadow-sm">
+					<img
+						src="/Images/theTeller Dashboard.jpg"
+						alt="POS"
+						style="height: 420px;"
+					/>
+				</div>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller Dashboard
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empower Your Business Operations:</strong> <br />
+						Take Charge with Confidence using our User-Friendly Dashboard,
+						ensuring seamless,<br />
+						secure, and efficient transactions.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+			</div>
+			<div
+				class="theTeller d-flex align-items-center justify-content-around flex-row"
+				style="padding-top: 15%;"
+			>
+				<div class="image">
+					<img
+						src="/Images/telaPAY UI Dashboard.png"
+						alt="POS"
+						style="height: 520px;"
+					/>
+				</div>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						telaPAY Dashboard and mobile app
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Elevate Your Business:</strong><br />
+						Experience Point-of-Sale Freedom on Phone or Tablet! <br />
+						Harness the Power of an Intuitive Dashboard for Effortless
+						Settlements and Payments <br />
+						Management.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+			</div>
+			<div
+				class="theTeller d-flex align-items-center justify-content-around flex-row"
+				style="padding-top: 15%;"
+			>
+				<div class="image">
+					<img src="/Images/PayLink.png" alt="POS" style="height: 520px;" />
+				</div>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						PayLink & PayQR
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Streamline Your Payment Experience:</strong><br />
+						Discover the Power of PayLink & PayQR! Effortlessly Create Payment
+						Links and QR Codes <br />
+						with Our Dashboard, Optimized for Mobile Convenience."
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tablet -->
+		<div class="content m-2 mt-4 d-none d-md-block d-lg-none">
+			<div class="hero flex-column mt-5" style="padding-top: 6%;">
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text text-start"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						Simplify Your Transactions <br />
+						with Our Seamless Solutions:
+					</p>
+					<p
+						class="subtext fs-5 text-start"
+						style="font-weight: 450; color: #011b33;"
+					>
+						Discover a world where payment delays and complexities are a thing
+						of the past. <br />
+						Embrace smooth, secure, and efficient financial transactions for a
+						hassle-free experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Get Started
+					</button>
+				</div>
+				<div class="image mt-5">
+					<img src="/Images/Payments.jpg" alt="POS" style="height: 430px;" />
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller API
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empowering Innovation:</strong> <br />
+						Harness the Potential of theTeller's Payment and Transfer Processing
+						API. <br />
+						Elevate Your Business with Streamlined Transactions, Backed by
+						Cutting-Edge<br />
+						Technology for a Future-Ready Payment Experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+
+				<div class="image shadow-sm mt-5">
+					<img src="/Images/teller-API.png" alt="POS" style="height: 380px;" />
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller Dashboard
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empower Your Business Operations:</strong> <br />
+						Take Charge with Confidence using our User-Friendly Dashboard,
+						ensuring seamless, secure, and efficient transactions.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image shadow-sm mt-5">
+					<img
+						src="/Images/theTeller Dashboard.jpg"
+						alt="POS"
+						style="height: 400px;"
+					/>
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						telaPAY Dashboard and mobile app
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Elevate Your Business:</strong><br />
+						Experience Point-of-Sale Freedom on Phone or Tablet! Harness the
+						Power of an Intuitive Dashboard for Effortless Settlements and
+						Payments Management.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image">
+					<img
+						src="/Images/telaPAY UI Dashboard.png"
+						alt="POS"
+						style="height: 520px;"
+					/>
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						PayLink & PayQR
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Streamline Your Payment Experience:</strong><br />
+						Discover the Power of PayLink & PayQR! Effortlessly Create Payment
+						Links and QR Codes <br />
+						with Our Dashboard, Optimized for Mobile Convenience."
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image">
+					<img src="/Images/PayLink.png" alt="POS" style="height: 520px;" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Phone -->
+		<div class="content mt-4 d-block d-md-none">
+			<div class="hero flex-column mt-5" style="padding-top: 6%;">
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text text-start"
+						style="font-weight: bolder; color: #011b33; font-size: 25px;"
+					>
+						Simplify Your Transactions <br />
+						with Our Seamless Solutions:
+					</p>
+					<p
+						class="subtext fs-6 text-start"
+						style="font-weight: 450; color: #011b33;"
+					>
+						Discover a world where payment delays and complexities are a thing
+						of the past. <br />
+						Embrace smooth, secure, and efficient financial transactions for a
+						hassle-free experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Get Started
+					</button>
+				</div>
+				<div class="image mt-5">
+					<img src="/Images/Payments.jpg" alt="POS" style="height: 300px;" />
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller API
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empowering Innovation:</strong> <br />
+						Harness the Potential of theTeller's Payment and Transfer Processing
+						API. <br />
+						Elevate Your Business with Streamlined Transactions, Backed by
+						Cutting-Edge<br />
+						Technology for a Future-Ready Payment Experience.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+
+				<div class="image shadow-sm mt-5">
+					<img src="/Images/teller-API.png" alt="POS" style="height: 230px;" />
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						theTeller Dashboard
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Empower Your Business Operations:</strong> <br />
+						Take Charge with Confidence using our User-Friendly Dashboard,
+						ensuring seamless, secure, and efficient transactions.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image shadow-sm mt-5">
+					<img
+						src="/Images/theTeller Dashboard.jpg"
+						alt="POS"
+						style="height: 250px;"
+					/>
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						telaPAY Dashboard and mobile app
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Elevate Your Business:</strong><br />
+						Experience Point-of-Sale Freedom on Phone or Tablet! Harness the
+						Power of an Intuitive Dashboard for Effortless Settlements and
+						Payments Management.
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image">
+					<img
+						src="/Images/telaPAY UI Dashboard.png"
+						alt="POS"
+						style="height: 350px;"
+					/>
+				</div>
+			</div>
+			<hr style="margin-top: 3%;" />
+			<div
+				class="theTeller d-flex align-items-start justify-content-around flex-column"
+				style="padding-top: 15%;"
+			>
+				<div class="paragragh" style="gap: 5% !important;">
+					<p
+						class="headline-text"
+						style="font-weight: bolder; color: #011b33; font-size: 40px;"
+					>
+						PayLink & PayQR
+					</p>
+					<p class="subtext fs-5" style="font-weight: 450; color: #011b33;">
+						<strong>Streamline Your Payment Experience:</strong><br />
+						Discover the Power of PayLink & PayQR! Effortlessly Create Payment
+						Links and QR Codes <br />
+						with Our Dashboard, Optimized for Mobile Convenience."
+					</p>
+					<button
+						class="btn btn-primary rounded-0 text-white fw-bold"
+						type="button"
+						style="font-size: 14px; padding: 10px 40px; margin-top: 5%;"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div class="image">
+					<img src="/Images/PayLink.png" alt="POS" style="height: 350px;" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

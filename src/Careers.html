@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="./src/main.css" />
 
-		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 		<title>Document</title>
 	</head>
@@ -17,8 +17,10 @@
 				class="left pt-3"
 				style="width: 100%; padding-left: 5%; padding-right: 5%;"
 			>
-				<div class="header">
-					<nav class="navbar navbar-expand-lg bg-body-transparent mt-4">
+				<div class="header d-none d-lg-block">
+					<nav
+						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
+					>
 						<div class="container-fluid">
 							<a class="navbar-brand" href="#">
 								<img
@@ -27,19 +29,80 @@
 									style="height: 50px;"
 								/>
 							</a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
 
 							<div
 								class="collapse navbar-collapse justify-content-center flex-grow-0"
 								id="navbarSupportedContent"
 							>
 								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-									<li class="nav-item">
-										<a class="nav-link" href="/src/index.html">Home</a>
-									</li>
 									<li class="nav-item dropdown">
-										<a class="nav-link" href="/src/Products.html">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
 											Products
 										</a>
+										<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+											<li>
+												<a class="dropdown-item p-3" href="payments.html">
+													<div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/payments.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payments
+														</h6>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="transfers.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/transfers.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Transfers
+														</h6>
+													</div></a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="payment-system.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/system.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payment Ecosystem
+														</h6>
+													</div></a
+												>
+											</li>
+										</ul>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
@@ -66,144 +129,391 @@
 					</nav>
 				</div>
 
-				<div
-					class="main mt-5 ms-3 me-5 pt-5 d-flex flex-column justify-content-center align-items-center"
-					style="gap: 7rem !important;"
-				>
-					<div
-						class="header-texts d-flex flex-column justify-content-center align-items-center gap-4"
+				<div class="header d-none d-lg-none d-md-block d-sm-none">
+					<nav
+						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex"
 					>
-						<p
-							class="headline-text fs-1"
-							style="font-weight: bolder; color: #011b33;"
-						>
-							Join Our Team
-						</p>
-						<p
-							class="subtext fs-6 text-center"
-							style="width: 70%; font-weight: 600; color: #3a3a3a;"
-						>
-							Welcome to the career page of our website! We're excited that
-							you're considering a career with us. <br /><br />
-							At PaySwitch, we are dedicated to revolutionizing the way payments
-							are processed, making transactions secure, efficient, and
-							hassle-free for businesses and consumers alike.
-						</p>
-						<a
-							class="btn btn-primary text-white fw-bold"
-							type="button"
-							style="font-size: 14px; padding: 10px 20px;"
-							href="Career-jobs.html"
-						>
-							See open roles
-						</a>
-					</div>
-					<div class="mission_vision d-flex flex-row justify-content-between">
-						<div class="texts" style="width: 40%;">
-							<p
-								class="headline text-primary"
-								style="font-size: 18px; font-weight: 800;"
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">
+								<img
+									src="/Images/logo.png"
+									alt="logo-header"
+									style="height: 35px;"
+								/>
+							</a>
+							<button
+								class="navbar-toggler rounded-0 border-0"
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasExample"
+								aria-controls="offcanvasExample"
 							>
-								OUR MISSION AND VISION
-							</p>
-							<p
-								class="subtext-big"
-								style="font-size: 30px; font-weight: 700; color: #011b33;"
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div
+								class="offcanvas offcanvas-end p-3 gap-5"
+								tabindex="-1"
+								id="offcanvasExample"
+								aria-labelledby="offcanvasExampleLabel"
 							>
-								As a team, we're driven by innovation, collaboration, and a
-								passion for creating exceptional payment solutions that shape
-								the future of commerce.
-							</p>
-							<p class="subtext fs-6" style="font-weight: 600; color: #3a3a3a;">
-								Our mission is simple yet impactful: to simplify payments and
-								empower businesses to thrive. We believe in the power of
-								technology to transform the way transactions are conducted,
-								leading to better customer experiences and growth opportunities
-								for businesses of all sizes.
-							</p>
-						</div>
-						<div class="video">
-							<iframe
-								width="560"
-								height="315"
-								src="https://www.youtube.com/embed/watch?v=kYc1RVN9oc8"
-								frameborder="0"
-								allowfullscreen
-							></iframe>
-						</div>
-					</div>
-					<div class="why-join w-100 h-75 rounded-2" style="">
-						<p
-							class="headline-text fs-3 text-center"
-							style="font-weight: bolder; color: #011b33;"
-						>
-							Why Join Us?
-						</p>
-						<div class="container text-center mt-5">
-							<div class="row row-cols-3 gy-5 gx-5">
-								<div class="col">
-									<div class="d-flex row">
-										<img src="" alt="" />
-										<h3 class="text-start">Innovative Environment</h3>
-									</div>
-									<p class="text-start">
-										As part of our team, you'll be at the forefront of the
-										payment industry's evolution. We encourage creative thinking
-										and provide the resources needed to turn innovative ideas
-										into reality.
-									</p>
-								</div>
-								<div class="col">
-									<div class="d-flex row">
-										<img src="" alt="" />
-										<h3 class="text-start">Collaborative Culture</h3>
-									</div>
-									<p class="text-start">
-										Collaboration is at the heart of our success. We foster an
-										inclusive and diverse environment where every team member's
-										perspective is valued. Together, we overcome challenges and
-										achieve remarkable results.
-									</p>
-								</div>
-								<div class="col">
-									<div class="d-flex row">
-										<img src="" alt="" />
-										<h3 class="text-start">Professional Growth</h3>
-									</div>
-									<p class="text-start">
-										We believe that our employees' growth is the company's
-										growth. We provide ongoing learning opportunities,
-										mentorship, and the chance to take on new responsibilities
-										as you advance in your career.
-									</p>
-								</div>
-								<div class="col">
-									<div class="d-flex row">
-										<img src="" alt="" />
-										<h3 class="text-start">Impactful Work</h3>
-									</div>
-									<p class="text-start">
-										Join us in shaping the future of payments. Your
-										contributions will directly impact businesses and consumers,
-										creating positive change in how transactions are conducted
-										globally.
-									</p>
-								</div>
-								<div class="col">
-									<div class="d-flex row">
-										<img src="" alt="" />
-										<h3 class="text-start">Work-Life Balance</h3>
-									</div>
-									<p class="text-start">
-										We understand the importance of a healthy work-life balance.
-										We offer flexible work arrangements and support our
-										employees in maintaining their overall well-being.
-									</p>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+								<div
+									class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
+								>
+									<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
+										<li class="nav-item">
+											<a class="nav-link" href="/src/index.html">Home</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Products
+											</a>
+											<ul class="dropdown-menu rounded-0 border-0">
+												<li>
+													<a class="dropdown-item p-3" href="payments.html">
+														<div class="d-flex align-items-center gap-2">
+															<img
+																src="/Images/dropdown-images/payments.png"
+																alt="drp1"
+																height="45"
+															/>
+
+															<h6 class="fw-semibold" style="font-size: 15px;">
+																Payments
+															</h6>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item p-3" href="transfers.html"
+														><div class="d-flex align-items-center gap-2">
+															<img
+																src="/Images/dropdown-images/transfers.png"
+																alt="drp1"
+																height="45"
+															/>
+
+															<h6 class="fw-semibold" style="font-size: 15px;">
+																Transfers
+															</h6>
+														</div></a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item p-3"
+														href="payment-system.html"
+														><div class="d-flex align-items-center gap-2">
+															<img
+																src="/Images/dropdown-images/system.png"
+																alt="drp1"
+																height="45"
+															/>
+
+															<h6 class="fw-semibold" style="font-size: 15px;">
+																Payment Ecosystem
+															</h6>
+														</div></a
+													>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/src/Careers.html">Careers</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/src/Contact.html">Contact</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/src/saas.html">Saas</a>
+										</li>
+									</ul>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 14px; padding: 10px 20px;"
+									>
+										Become a Merchant
+									</button>
 								</div>
 							</div>
 						</div>
+					</nav>
+				</div>
 
-						<!-- <div class="row row-cols-3 p-5">
+				<div class="header d-md-none">
+					<nav
+						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex"
+					>
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">
+								<img
+									src="/Images/logo.png"
+									alt="logo-header"
+									style="height: 32px;"
+								/>
+							</a>
+							<button
+								class="navbar-toggler rounded-0 border-0"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div
+								class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
+								id="navbarSupportedContent"
+							>
+								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold mt-2">
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Products
+										</a>
+										<ul class="dropdown-menu rounded-0 border-0">
+											<li class="nav-item">
+												<a class="nav-link" href="/src/index.html">Home?</a>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="payments.html">
+													<div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/payments.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payments
+														</h6>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="transfers.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/transfers.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Transfers
+														</h6>
+													</div></a
+												>
+											</li>
+											<li>
+												<a class="dropdown-item p-3" href="payment-system.html"
+													><div class="d-flex align-items-center gap-2">
+														<img
+															src="/Images/dropdown-images/system.png"
+															alt="drp1"
+															height="45"
+														/>
+
+														<h6 class="fw-semibold" style="font-size: 15px;">
+															Payment Ecosystem
+														</h6>
+													</div></a
+												>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Whyus.html">Why Us?</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Careers.html">Careers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/Contact.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/src/saas.html">Saas</a>
+									</li>
+								</ul>
+								<button
+									class="btn btn-primary rounded-0 text-white fw-bold"
+									type="button"
+									style="font-size: 14px; padding: 10px 20px;"
+								>
+									Become a Merchant
+								</button>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<!-- Desktop -->
+				<div class="d-none d-lg-flex">
+					<div
+						class="main mt-5 ms-3 me-5 pt-5 d-flex flex-column justify-content-center align-items-center"
+						style="gap: 7rem !important;"
+					>
+						<div
+							class="header-texts d-flex flex-column justify-content-center align-items-center gap-4"
+						>
+							<p
+								class="headline-text fs-1"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Join Our Team
+							</p>
+							<p
+								class="subtext fs-6 text-center"
+								style="width: 70%; font-weight: 600; color: #3a3a3a;"
+							>
+								Welcome to the career page of our website! We're excited that
+								you're considering a career with us. <br /><br />
+								At PaySwitch, we are dedicated to revolutionizing the way
+								payments are processed, making transactions secure, efficient,
+								and hassle-free for businesses and consumers alike.
+							</p>
+							<a
+								class="btn btn-primary text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+								href="Career-jobs.html"
+							>
+								See open roles
+							</a>
+						</div>
+						<div class="mission_vision d-flex flex-row justify-content-between">
+							<div class="texts" style="width: 40%;">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
+								>
+									OUR MISSION AND VISION
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
+								>
+									As a team, we're driven by innovation, collaboration, and a
+									passion for creating exceptional payment solutions that shape
+									the future of commerce.
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Our mission is simple yet impactful: to simplify payments and
+									empower businesses to thrive. We believe in the power of
+									technology to transform the way transactions are conducted,
+									leading to better customer experiences and growth
+									opportunities for businesses of all sizes.
+								</p>
+							</div>
+							<div class="video">
+								<iframe
+									width="560"
+									height="315"
+									src="https://www.youtube.com/embed/watch?v=kYc1RVN9oc8"
+									frameborder="0"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+						<div class="why-join w-100 h-75 rounded-2" style="">
+							<p
+								class="headline-text fs-3 text-center"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Why Join Us?
+							</p>
+							<div class="container text-center mt-5">
+								<div class="row row-cols-3 gy-5 gx-5">
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Innovative Environment</h3>
+										</div>
+										<p class="text-start">
+											As part of our team, you'll be at the forefront of the
+											payment industry's evolution. We encourage creative
+											thinking and provide the resources needed to turn
+											innovative ideas into reality.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Collaborative Culture</h3>
+										</div>
+										<p class="text-start">
+											Collaboration is at the heart of our success. We foster an
+											inclusive and diverse environment where every team
+											member's perspective is valued. Together, we overcome
+											challenges and achieve remarkable results.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Professional Growth</h3>
+										</div>
+										<p class="text-start">
+											We believe that our employees' growth is the company's
+											growth. We provide ongoing learning opportunities,
+											mentorship, and the chance to take on new responsibilities
+											as you advance in your career.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Impactful Work</h3>
+										</div>
+										<p class="text-start">
+											Join us in shaping the future of payments. Your
+											contributions will directly impact businesses and
+											consumers, creating positive change in how transactions
+											are conducted globally.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Work-Life Balance</h3>
+										</div>
+										<p class="text-start">
+											We understand the importance of a healthy work-life
+											balance. We offer flexible work arrangements and support
+											our employees in maintaining their overall well-being.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="row row-cols-3 p-5">
 							<div class="col">
 								<span
 									class="d-flex align-content-center justify-items-center gap-2"
@@ -283,205 +593,1084 @@
 								</p>
 							</div>
 						</div> -->
-					</div>
+						</div>
 
-					<div
-						class="culture d-flex flex-column justify-content-center align-items-center"
-					>
-						<p class="headline-text fs-3" style="font-weight: bolder;">
-							Our Culture
-						</p>
-						<p
-							class="subtext fs-6 text-center"
-							style="width: 70%; font-weight: 600; color: #3a3a3a;"
+						<div
+							class="culture d-flex flex-column justify-content-center align-items-center"
 						>
-							At PaySwitch, our culture is built on a foundation of trust,
-							respect, and integrity. We celebrate diversity and believe that a
-							variety of perspectives enhances our creativity and
-							problem-solving capabilities. <br /><br />
-							Our team members are encouraged to voice their ideas, ask
-							questions, and challenge the status quo. We foster an environment
-							where everyone's contributions are acknowledged and rewarded.
-						</p>
-					</div>
-
-					<div class="mission_vision d-flex flex-row justify-content-between">
-						<div class="texts" style="width: 40%;">
-							<p
-								class="headline text-primary"
-								style="font-size: 18px; font-weight: 800;"
-							>
-								OPEN POSITIONS
+							<p class="headline-text fs-3" style="font-weight: bolder;">
+								Our Culture
 							</p>
 							<p
-								class="subtext-big"
-								style="font-size: 30px; font-weight: 700; color: #011b33;"
+								class="subtext fs-6 text-center"
+								style="width: 70%; font-weight: 600; color: #3a3a3a;"
 							>
-								Explore our current job openings and join us on our journey to
-								redefine payment processing. We're looking for passionate
-								individuals who are ready to make a difference. Check out our
-								current openings below:
-							</p>
-							<p class="subtext fs-6" style="font-weight: 600; color: #3a3a3a;">
-								Your expertise could be the missing piece that helps us achieve
-								this mission. Join us in revolutionizing the way transactions
-								are conducted!
+								At PaySwitch, our culture is built on a foundation of trust,
+								respect, and integrity. We celebrate diversity and believe that
+								a variety of perspectives enhances our creativity and
+								problem-solving capabilities. <br /><br />
+								Our team members are encouraged to voice their ideas, ask
+								questions, and challenge the status quo. We foster an
+								environment where everyone's contributions are acknowledged and
+								rewarded.
 							</p>
 						</div>
-						<div class="job-cards d-flex flex-column gap-3">
-							<div
-								class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
-							>
-								<div class="job-desc d-flex flex-column gap-2">
-									<h4 class="fw-bold">Technology</h4>
-									<h5 class="">Programmer</h5>
-									<h6>
-										Participate in development of new software ...
-										<a href="#">View more</a>
-									</h6>
-								</div>
-								<button
-									class="btn btn-primary rounded-0 text-white fw-bold"
-									type="button"
-									style="font-size: 12px; padding: 5px 30px;"
-									data-bs-toggle="modal"
-									data-bs-target="#exampleModal"
+
+						<div class="mission_vision d-flex flex-row justify-content-between">
+							<div class="texts" style="width: 40%;">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
 								>
-									Apply
-								</button>
-							</div>
-							<div
-								class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
-							>
-								<div class="job-desc d-flex flex-column gap-2">
-									<h4 class="fw-bold">Business</h4>
-									<h6 class="">Business Development Officer</h6>
-									<h6>
-										Our company is looking for a skilled Business...
-										<a href="#">View more</a>
-									</h6>
-								</div>
-								<button
-									class="btn btn-primary rounded-0 text-white fw-bold"
-									type="button"
-									style="font-size: 12px; padding: 5px 30px;"
-									data-bs-toggle="modal"
-									data-bs-target="#exampleModal"
+									OPEN POSITIONS
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
 								>
-									Apply
-								</button>
+									Explore our current job openings and join us on our journey to
+									redefine payment processing. We're looking for passionate
+									individuals who are ready to make a difference. Check out our
+									current openings below:
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Your expertise could be the missing piece that helps us
+									achieve this mission. Join us in revolutionizing the way
+									transactions are conducted!
+								</p>
 							</div>
-
-							<a href="Career-jobs.html" class="fw-bold text-end">View More</a>
-						</div>
-					</div>
-				</div>
-
-				<div
-					class="alert alert-primary rounded-0 mt-4 me-5 float-end border border-primary border-5 border-start border-bottom-0 border-top-0 border-end-0"
-					style="width: 40%;"
-					role="alert"
-				>
-					<p style="font-size: 22px; font-weight: 700;">
-						Cannot find a suitable role?
-					</p>
-					<p class="m-0" style="font-size: 15px; font-weight: 6 gap-2;">
-						Email us your Resume at
-						<a href="#" class="fw-bold">careers@payswitch.com</a>
-					</p>
-				</div>
-				<div
-					class="modal fade"
-					id="exampleModal"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h4>Job Application</h4>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">
-								<div class="form-container d-flex flex-column p-3 gap-3">
-									<div class="name-fields d-flex gap-4">
-										<div class="mb-3">
-											<label for="FormControlInput1" class="form-label"
-												>First</label
-											>
-											<input
-												type="text"
-												class="form-control"
-												id="FormControlInput1"
-												placeholder="E.g Chris"
-											/>
-										</div>
-										<div class="mb-3">
-											<label for="FormControlInput1" class="form-label"
-												>Last Name</label
-											>
-											<input
-												type="text"
-												class="form-control"
-												id="eFormControlInput1"
-												placeholder="E.g Ashley"
-											/>
-										</div>
+							<div class="job-cards d-flex flex-column gap-3">
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Technology</h4>
+										<h5 class="">Programmer</h5>
+										<h6>
+											Participate in development of new software ...
+											<a href="#">View more</a>
+										</h6>
 									</div>
-
-									<div class="mb-3">
-										<label for="FormControlInput1" class="form-label">
-											Email</label
-										>
-										<input
-											type="Email"
-											class="form-control"
-											id="eFormControlInput1"
-											placeholder="E.g mailk@mail.com"
-										/>
-									</div>
-									<div class="mb-3 d-grid">
-										<label for="FormControlInput1" class="form-label">
-											Phone Number</label
-										>
-										<input
-											name="phone"
-											type="text"
-											id="phone"
-											class="form-control"
-											placeholder=" Eg. +233 012 345 6789"
-										/>
-									</div>
-									<div class="mb-3">
-										<label for="formFile FormControlInput1" class="form-label"
-											>Upload Your CV here</label
-										>
-										<input class="form-control" type="file" id="formFile" />
-									</div>
-									<div class="mb-3">
-										<label for="exampleFormControlTextarea1" class="form-label"
-											>Cover Letter</label
-										>
-										<textarea
-											class="form-control"
-											id="exampleFormControlTextarea1"
-											rows="3"
-										></textarea>
-									</div>
-
 									<button
 										class="btn btn-primary rounded-0 text-white fw-bold"
 										type="button"
-										style="font-size: 16px; padding: 8px 45px;"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
 									>
-										Submit
+										Apply
 									</button>
+								</div>
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Business</h4>
+										<h6 class="">Business Development Officer</h6>
+										<h6>
+											Our company is looking for a skilled Business...
+											<a href="#">View more</a>
+										</h6>
+									</div>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										Apply
+									</button>
+								</div>
+
+								<a href="Career-jobs.html" class="fw-bold text-end"
+									>View More</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="alert alert-primary rounded-0 mt-4 me-5 float-end border border-primary border-5 border-start border-bottom-0 border-top-0 border-end-0"
+						style="width: 40%;"
+						role="alert"
+					>
+						<p style="font-size: 22px; font-weight: 700;">
+							Cannot find a suitable role?
+						</p>
+						<p class="m-0" style="font-size: 15px; font-weight: 6 gap-2;">
+							Email us your Resume at
+							<a href="#" class="fw-bold">careers@payswitch.com</a>
+						</p>
+					</div>
+					<div
+						class="modal fade"
+						id="exampleModal"
+						tabindex="-1"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4>Job Application</h4>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="modal-body">
+									<div class="form-container d-flex flex-column p-3 gap-3">
+										<div class="name-fields d-flex gap-4">
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>First</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="FormControlInput1"
+													placeholder="E.g Chris"
+												/>
+											</div>
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>Last Name</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="eFormControlInput1"
+													placeholder="E.g Ashley"
+												/>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="FormControlInput1" class="form-label">
+												Email</label
+											>
+											<input
+												type="Email"
+												class="form-control"
+												id="eFormControlInput1"
+												placeholder="E.g mailk@mail.com"
+											/>
+										</div>
+										<div class="mb-3 d-grid">
+											<label for="FormControlInput1" class="form-label">
+												Phone Number</label
+											>
+											<input
+												name="phone"
+												type="text"
+												id="phone"
+												class="form-control"
+												placeholder=" Eg. +233 012 345 6789"
+											/>
+										</div>
+										<div class="mb-3">
+											<label for="formFile FormControlInput1" class="form-label"
+												>Upload Your CV here</label
+											>
+											<input class="form-control" type="file" id="formFile" />
+										</div>
+										<div class="mb-3">
+											<label
+												for="exampleFormControlTextarea1"
+												class="form-label"
+												>Cover Letter</label
+											>
+											<textarea
+												class="form-control"
+												id="exampleFormControlTextarea1"
+												rows="3"
+											></textarea>
+										</div>
+
+										<button
+											class="btn btn-primary rounded-0 text-white fw-bold"
+											type="button"
+											style="font-size: 16px; padding: 8px 45px;"
+										>
+											Submit
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Tablet -->
+				<div class="d-none d-md-block d-lg-none">
+					<div
+						class="main mt-5 ms-3 me-5 pt-5 d-flex flex-column justify-content-center align-items-center"
+						style="gap: 7rem !important;"
+					>
+						<div
+							class="header-texts d-flex flex-column justify-content-start align-items-start gap-4"
+						>
+							<p
+								class="headline-text fs-1"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Join Our Team
+							</p>
+							<p
+								class="subtext fs-6 text-start"
+								style="font-weight: 600; color: #3a3a3a;"
+							>
+								Welcome to the career page of our website! We're excited that
+								you're considering a career with us. <br /><br />
+								At PaySwitch, we are dedicated to revolutionizing the way
+								payments are processed, making transactions secure, efficient,
+								and hassle-free for businesses and consumers alike.
+							</p>
+							<a
+								class="btn btn-primary text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+								href="Career-jobs.html"
+							>
+								See open roles
+							</a>
+						</div>
+						<div class="mission_vision d-flex flex-column justify-content-center">
+							<div class="texts">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
+								>
+									OUR MISSION AND VISION
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
+								>
+									As a team, we're driven by innovation, collaboration, and a
+									passion for creating exceptional payment solutions that shape
+									the future of commerce.
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Our mission is simple yet impactful: to simplify payments and
+									empower businesses to thrive. We believe in the power of
+									technology to transform the way transactions are conducted,
+									leading to better customer experiences and growth
+									opportunities for businesses of all sizes.
+								</p>
+							</div>
+							<div class="video">
+								<iframe
+									width="760"
+									height="415"
+									src="https://www.youtube.com/embed/watch?v=kYc1RVN9oc8"
+									frameborder="0"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+						<div class="why-join w-100 h-75 rounded-2" style="">
+							<p
+								class="headline-text fs-3 text-start"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Why Join Us?
+							</p>
+							<div class="container text-center mt-5">
+								<div class="row row-cols-3 gy-5 gx-5">
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Innovative Environment</h3>
+										</div>
+										<p class="text-start">
+											As part of our team, you'll be at the forefront of the
+											payment industry's evolution. We encourage creative
+											thinking and provide the resources needed to turn
+											innovative ideas into reality.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Collaborative Culture</h3>
+										</div>
+										<p class="text-start">
+											Collaboration is at the heart of our success. We foster an
+											inclusive and diverse environment where every team
+											member's perspective is valued. Together, we overcome
+											challenges and achieve remarkable results.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Professional Growth</h3>
+										</div>
+										<p class="text-start">
+											We believe that our employees' growth is the company's
+											growth. We provide ongoing learning opportunities,
+											mentorship, and the chance to take on new responsibilities
+											as you advance in your career.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Impactful Work</h3>
+										</div>
+										<p class="text-start">
+											Join us in shaping the future of payments. Your
+											contributions will directly impact businesses and
+											consumers, creating positive change in how transactions
+											are conducted globally.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Work-Life Balance</h3>
+										</div>
+										<p class="text-start">
+											We understand the importance of a healthy work-life
+											balance. We offer flexible work arrangements and support
+											our employees in maintaining their overall well-being.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="row row-cols-3 p-5">
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">Innovative Environment</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+						</div> -->
+						</div>
+
+						<div
+							class="culture d-flex flex-column justify-content-start align-items-start"
+						>
+							<p class="headline-text fs-3" style="font-weight: bolder;">
+								Our Culture
+							</p>
+							<p
+								class="subtext fs-6 text-start"
+								style="width: 70%; font-weight: 600; color: #3a3a3a;"
+							>
+								At PaySwitch, our culture is built on a foundation of trust,
+								respect, and integrity. We celebrate diversity and believe that
+								a variety of perspectives enhances our creativity and
+								problem-solving capabilities. <br /><br />
+								Our team members are encouraged to voice their ideas, ask
+								questions, and challenge the status quo. We foster an
+								environment where everyone's contributions are acknowledged and
+								rewarded.
+							</p>
+						</div>
+
+						<div class="mission_vision d-flex flex-column justify-content-between">
+							<div class="texts">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
+								>
+									OPEN POSITIONS
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
+								>
+									Explore our current job openings and join us on our journey to
+									redefine payment processing. We're looking for passionate
+									individuals who are ready to make a difference. Check out our
+									current openings below:
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Your expertise could be the missing piece that helps us
+									achieve this mission. Join us in revolutionizing the way
+									transactions are conducted!
+								</p>
+							</div>
+							<div class="job-cards d-flex flex-column gap-3">
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Technology</h4>
+										<h5 class="">Programmer</h5>
+										<h6>
+											Participate in development of new software ...
+											<a href="#">View more</a>
+										</h6>
+									</div>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										Apply
+									</button>
+								</div>
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Business</h4>
+										<h6 class="">Business Development Officer</h6>
+										<h6>
+											Our company is looking for a skilled Business...
+											<a href="#">View more</a>
+										</h6>
+									</div>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										Apply
+									</button>
+								</div>
+
+								<a href="Career-jobs.html" class="fw-bold text-end"
+									>View More</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="alert alert-primary rounded-0 mt-4 me-5 float-start border border-primary border-5 border-start border-bottom-0 border-top-0 border-end-0"
+						style="width: 95%;"
+						role="alert"
+					>
+						<p style="font-size: 22px; font-weight: 700;">
+							Cannot find a suitable role?
+						</p>
+						<p class="m-0" style="font-size: 15px; font-weight: 6 gap-2;">
+							Email us your Resume at
+							<a href="#" class="fw-bold">careers@payswitch.com</a>
+						</p>
+					</div>
+					<div
+						class="modal fade"
+						id="exampleModal"
+						tabindex="-1"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4>Job Application</h4>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="modal-body">
+									<div class="form-container d-flex flex-column p-3 gap-3">
+										<div class="name-fields d-flex gap-4">
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>First</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="FormControlInput1"
+													placeholder="E.g Chris"
+												/>
+											</div>
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>Last Name</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="eFormControlInput1"
+													placeholder="E.g Ashley"
+												/>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="FormControlInput1" class="form-label">
+												Email</label
+											>
+											<input
+												type="Email"
+												class="form-control"
+												id="eFormControlInput1"
+												placeholder="E.g mailk@mail.com"
+											/>
+										</div>
+										<div class="mb-3 d-grid">
+											<label for="FormControlInput1" class="form-label">
+												Phone Number</label
+											>
+											<input
+												name="phone"
+												type="text"
+												id="phone"
+												class="form-control"
+												placeholder=" Eg. +233 012 345 6789"
+											/>
+										</div>
+										<div class="mb-3">
+											<label for="formFile FormControlInput1" class="form-label"
+												>Upload Your CV here</label
+											>
+											<input class="form-control" type="file" id="formFile" />
+										</div>
+										<div class="mb-3">
+											<label
+												for="exampleFormControlTextarea1"
+												class="form-label"
+												>Cover Letter</label
+											>
+											<textarea
+												class="form-control"
+												id="exampleFormControlTextarea1"
+												rows="3"
+											></textarea>
+										</div>
+
+										<button
+											class="btn btn-primary rounded-0 text-white fw-bold"
+											type="button"
+											style="font-size: 16px; padding: 8px 45px;"
+										>
+											Submit
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Tablet -->
+				<div class="d-block d-md-none">
+					<div
+						class="main mt-5 ms-3 me-5 pt-5 d-flex flex-column justify-content-center align-items-center"
+						style="gap: 7rem !important;"
+					>
+						<div
+							class="header-texts d-flex flex-column justify-content-start align-items-start gap-4"
+						>
+							<p
+								class="headline-text fs-1"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Join Our Team
+							</p>
+							<p
+								class="subtext fs-6 text-start"
+								style="font-weight: 600; color: #3a3a3a;"
+							>
+								Welcome to the career page of our website! We're excited that
+								you're considering a career with us. <br /><br />
+								At PaySwitch, we are dedicated to revolutionizing the way
+								payments are processed, making transactions secure, efficient,
+								and hassle-free for businesses and consumers alike.
+							</p>
+							<a
+								class="btn btn-primary text-white fw-bold"
+								type="button"
+								style="font-size: 14px; padding: 10px 20px;"
+								href="Career-jobs.html"
+							>
+								See open roles
+							</a>
+						</div>
+						<div class="mission_vision d-flex flex-column justify-content-center">
+							<div class="texts">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
+								>
+									OUR MISSION AND VISION
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
+								>
+									As a team, we're driven by innovation, collaboration, and a
+									passion for creating exceptional payment solutions that shape
+									the future of commerce.
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Our mission is simple yet impactful: to simplify payments and
+									empower businesses to thrive. We believe in the power of
+									technology to transform the way transactions are conducted,
+									leading to better customer experiences and growth
+									opportunities for businesses of all sizes.
+								</p>
+							</div>
+							<div class="video">
+								<iframe
+									width="760"
+									height="415"
+									src="https://www.youtube.com/embed/watch?v=kYc1RVN9oc8"
+									frameborder="0"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+						<div class="why-join w-100 h-75 rounded-2" style="">
+							<p
+								class="headline-text fs-3 text-start"
+								style="font-weight: bolder; color: #011b33;"
+							>
+								Why Join Us?
+							</p>
+							<div class="container text-center mt-5">
+								<div class="row row-cols-3 gy-5 gx-5">
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Innovative Environment</h3>
+										</div>
+										<p class="text-start">
+											As part of our team, you'll be at the forefront of the
+											payment industry's evolution. We encourage creative
+											thinking and provide the resources needed to turn
+											innovative ideas into reality.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Collaborative Culture</h3>
+										</div>
+										<p class="text-start">
+											Collaboration is at the heart of our success. We foster an
+											inclusive and diverse environment where every team
+											member's perspective is valued. Together, we overcome
+											challenges and achieve remarkable results.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Professional Growth</h3>
+										</div>
+										<p class="text-start">
+											We believe that our employees' growth is the company's
+											growth. We provide ongoing learning opportunities,
+											mentorship, and the chance to take on new responsibilities
+											as you advance in your career.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Impactful Work</h3>
+										</div>
+										<p class="text-start">
+											Join us in shaping the future of payments. Your
+											contributions will directly impact businesses and
+											consumers, creating positive change in how transactions
+											are conducted globally.
+										</p>
+									</div>
+									<div class="col">
+										<div class="d-flex row">
+											<img src="" alt="" />
+											<h3 class="text-start">Work-Life Balance</h3>
+										</div>
+										<p class="text-start">
+											We understand the importance of a healthy work-life
+											balance. We offer flexible work arrangements and support
+											our employees in maintaining their overall well-being.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="row row-cols-3 p-5">
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">Innovative Environment</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+							<div class="col">
+								<span
+									class="d-flex align-content-center justify-items-center gap-2"
+								>
+									<img src="/Images/icon.svg" alt="icon" />
+									<p class="text-white">
+										Innovative Environment
+									</p>
+								</span>
+								<p class="text-white">
+									As part of our team, you'll be at the forefront of the payment
+									industry's evolution. We encourage creative thinking and
+									provide the resources needed to turn innovative ideas into
+									reality.
+								</p>
+							</div>
+						</div> -->
+						</div>
+
+						<div
+							class="culture d-flex flex-column justify-content-start align-items-start"
+						>
+							<p class="headline-text fs-3" style="font-weight: bolder;">
+								Our Culture
+							</p>
+							<p
+								class="subtext fs-6 text-start"
+								style="width: 70%; font-weight: 600; color: #3a3a3a;"
+							>
+								At PaySwitch, our culture is built on a foundation of trust,
+								respect, and integrity. We celebrate diversity and believe that
+								a variety of perspectives enhances our creativity and
+								problem-solving capabilities. <br /><br />
+								Our team members are encouraged to voice their ideas, ask
+								questions, and challenge the status quo. We foster an
+								environment where everyone's contributions are acknowledged and
+								rewarded.
+							</p>
+						</div>
+
+						<div class="mission_vision d-flex flex-column justify-content-between">
+							<div class="texts">
+								<p
+									class="headline text-primary"
+									style="font-size: 18px; font-weight: 800;"
+								>
+									OPEN POSITIONS
+								</p>
+								<p
+									class="subtext-big"
+									style="font-size: 30px; font-weight: 700; color: #011b33;"
+								>
+									Explore our current job openings and join us on our journey to
+									redefine payment processing. We're looking for passionate
+									individuals who are ready to make a difference. Check out our
+									current openings below:
+								</p>
+								<p
+									class="subtext fs-6"
+									style="font-weight: 600; color: #3a3a3a;"
+								>
+									Your expertise could be the missing piece that helps us
+									achieve this mission. Join us in revolutionizing the way
+									transactions are conducted!
+								</p>
+							</div>
+							<div class="job-cards d-flex flex-column gap-3">
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Technology</h4>
+										<h5 class="">Programmer</h5>
+										<h6>
+											Participate in development of new software ...
+											<a href="#">View more</a>
+										</h6>
+									</div>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										Apply
+									</button>
+								</div>
+								<div
+									class="card d-flex flex-row justify-content-between align-items-center p-3 border-1 rounded-0 gap-5"
+								>
+									<div class="job-desc d-flex flex-column gap-2">
+										<h4 class="fw-bold">Business</h4>
+										<h6 class="">Business Development Officer</h6>
+										<h6>
+											Our company is looking for a skilled Business...
+											<a href="#">View more</a>
+										</h6>
+									</div>
+									<button
+										class="btn btn-primary rounded-0 text-white fw-bold"
+										type="button"
+										style="font-size: 12px; padding: 5px 30px;"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										Apply
+									</button>
+								</div>
+
+								<a href="Career-jobs.html" class="fw-bold text-end"
+									>View More</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="alert alert-primary rounded-0 mt-4 me-5 float-start border border-primary border-5 border-start border-bottom-0 border-top-0 border-end-0"
+						style="width: 95%;"
+						role="alert"
+					>
+						<p style="font-size: 22px; font-weight: 700;">
+							Cannot find a suitable role?
+						</p>
+						<p class="m-0" style="font-size: 15px; font-weight: 6 gap-2;">
+							Email us your Resume at
+							<a href="#" class="fw-bold">careers@payswitch.com</a>
+						</p>
+					</div>
+					<div
+						class="modal fade"
+						id="exampleModal"
+						tabindex="-1"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4>Job Application</h4>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="modal-body">
+									<div class="form-container d-flex flex-column p-3 gap-3">
+										<div class="name-fields d-flex gap-4">
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>First</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="FormControlInput1"
+													placeholder="E.g Chris"
+												/>
+											</div>
+											<div class="mb-3">
+												<label for="FormControlInput1" class="form-label"
+													>Last Name</label
+												>
+												<input
+													type="text"
+													class="form-control"
+													id="eFormControlInput1"
+													placeholder="E.g Ashley"
+												/>
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="FormControlInput1" class="form-label">
+												Email</label
+											>
+											<input
+												type="Email"
+												class="form-control"
+												id="eFormControlInput1"
+												placeholder="E.g mailk@mail.com"
+											/>
+										</div>
+										<div class="mb-3 d-grid">
+											<label for="FormControlInput1" class="form-label">
+												Phone Number</label
+											>
+											<input
+												name="phone"
+												type="text"
+												id="phone"
+												class="form-control"
+												placeholder=" Eg. +233 012 345 6789"
+											/>
+										</div>
+										<div class="mb-3">
+											<label for="formFile FormControlInput1" class="form-label"
+												>Upload Your CV here</label
+											>
+											<input class="form-control" type="file" id="formFile" />
+										</div>
+										<div class="mb-3">
+											<label
+												for="exampleFormControlTextarea1"
+												class="form-label"
+												>Cover Letter</label
+											>
+											<textarea
+												class="form-control"
+												id="exampleFormControlTextarea1"
+												rows="3"
+											></textarea>
+										</div>
+
+										<button
+											class="btn btn-primary rounded-0 text-white fw-bold"
+											type="button"
+											style="font-size: 16px; padding: 8px 45px;"
+										>
+											Submit
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
