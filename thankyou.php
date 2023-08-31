@@ -11,7 +11,7 @@
     <h2>Email Sent Sucessfully!</h2>
     <br>
 
-    <a href="/"> Back to home page </p>
+    <a href="./"> Back to home page </p>
     
 </body>
 </html>
