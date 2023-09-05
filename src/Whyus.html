@@ -11,593 +11,293 @@
 
 		<title>Document</title>
 	</head>
-	<body class="ot-sec">
-		<div class="main">
-			<div
-				class="left pt-3"
-				style="width: 100%; padding-left: 5%; padding-right: 5%;"
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-white py-lg-3 px-lg-3 p-3">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href=""><img src="/images/logo.png" alt="logo" height="45px"></a>
+			  <button
+				class="navbar-toggler border-0"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarScroll"
+				aria-controls="navbarScroll"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse h-100 flex-grow-0 gap-5 p-3 p-lg-0" id="navbarScroll">
+				<ul
+				  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav gap-lg-3"
+				  style="--bs-scroll-height: 100px;"
+				>
+				  <li class="nav-item">
+					<a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Home</a>
+				  </li>
+
+				 
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Products
+						</a>
+						<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+							<li>
+								<a class="dropdown-item p-3" href="../src/payments.html">
+									<div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/payments.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payments
+										</h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/transfers.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/transfers.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Transfers
+										</h6>
+									</div></a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/payment-system.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/system.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payment Ecosystem
+										</h6>
+									</div></a
+								>
+							</li>
+						</ul>
+					</li>
+					<a class="nav-link" href="./src/Whyus.html">Why Us</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Careers.html">Careers</a>
+				  </li>
+				  </li>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Contact.html">Contact</a>
+				  </li>
+				  </li>
+				  </li>
+				</ul>
+				<a
+				class="btn btn-primary rounded-0 text-white fw-bold"
+				type="button"
+				style="font-size: 14px; padding: 10px 20px;"
+				href="https://theteller.net/signup"
 			>
-				<div class="header d-none d-lg-block">
-					<nav
-						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
-					>
-						<div class="container-fluid">
-							<a class="navbar-brand" href="../index.html">
-								<img
-									src="../Images/logo.png"
-									alt="logo-header"
-									style="height: 50px;"
-								/>
-							</a>
-							<button
-								class="navbar-toggler"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
+				Become a Merchant
+			</a>
 
-							<div
-								class="collapse navbar-collapse justify-content-center flex-grow-0"
-								id="navbarSupportedContent"
-							>
-								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											Products
-										</a>
-										<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-											<li>
-												<a class="dropdown-item p-3" href="../src/payments.html">
-													<div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/payments.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Payments
-														</h6>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item p-3" href="../src/transfers.html"
-													><div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/transfers.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Transfers
-														</h6>
-													</div></a
-												>
-											</li>
-											<li>
-												<a
-													class="dropdown-item p-3"
-													href="../src/payment-system.html"
-													><div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/system.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Payment Ecosystem
-														</h6>
-													</div></a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Careers.html">Careers</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Contact.html">Contact</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/saas.html">Saas</a>
-									</li>
-								</ul>
-							</div>
-							<button
-								class="btn btn-primary rounded-0 text-white fw-bold"
-								type="button"
-								style="font-size: 14px; padding: 10px 20px;"
-							>
-								Become a Merchant
-							</button>
-						</div>
-					</nav>
-				</div>
-
-				<div class="header d-none d-lg-none d-md-block d-sm-none">
-					<nav
-						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex"
-					>
-						<div class="container-fluid">
-							<a class="navbar-brand" href="../index.html">
-								<img
-									src="../Images/logo.png"
-									alt="logo-header"
-									style="height: 35px;"
-								/>
-							</a>
-							<button
-								class="navbar-toggler rounded-0 border-0"
-								type="button"
-								data-bs-toggle="offcanvas"
-								data-bs-target="#offcanvasExample"
-								aria-controls="offcanvasExample"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-
-							<div
-								class="offcanvas offcanvas-end p-3 gap-5"
-								tabindex="-1"
-								id="offcanvasExample"
-								aria-labelledby="offcanvasExampleLabel"
-							>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="offcanvas"
-									aria-label="Close"
-								></button>
-								<div
-									class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
-								>
-									<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-										<li class="nav-item dropdown">
-											<a
-												class="nav-link dropdown-toggle"
-												href="#"
-												role="button"
-												data-bs-toggle="dropdown"
-												aria-expanded="false"
-											>
-												Products
-											</a>
-											<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-												<li>
-													<a
-														class="dropdown-item p-3"
-														href="../src/payments.html"
-													>
-														<div class="d-flex align-items-center gap-2">
-															<img
-																src="../Images/dropdown-images/payments.png"
-																alt="drp1"
-																height="45"
-															/>
-
-															<h6 class="fw-semibold" style="font-size: 15px;">
-																Payments
-															</h6>
-														</div>
-													</a>
-												</li>
-												<li>
-													<a
-														class="dropdown-item p-3"
-														href="../src/transfers.html"
-														><div class="d-flex align-items-center gap-2">
-															<img
-																src="../Images/dropdown-images/transfers.png"
-																alt="drp1"
-																height="45"
-															/>
-
-															<h6 class="fw-semibold" style="font-size: 15px;">
-																Transfers
-															</h6>
-														</div></a
-													>
-												</li>
-												<li>
-													<a
-														class="dropdown-item p-3"
-														href="../src/payment-system.html"
-														><div class="d-flex align-items-center gap-2">
-															<img
-																src="../Images/dropdown-images/system.png"
-																alt="drp1"
-																height="45"
-															/>
-
-															<h6 class="fw-semibold" style="font-size: 15px;">
-																Payment Ecosystem
-															</h6>
-														</div></a
-													>
-												</li>
-											</ul>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="../src/Careers.html">Careers</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="../src/Contact.html">Contact</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="../src/saas.html">Saas</a>
-										</li>
-									</ul>
-									<button
-										class="btn btn-primary rounded-0 text-white fw-bold"
-										type="button"
-										style="font-size: 14px; padding: 10px 20px;"
-									>
-										Become a Merchant
-									</button>
-								</div>
-							</div>
-						</div>
-					</nav>
-				</div>
-
-				<div class="header d-md-none">
-					<nav
-						class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex"
-					>
-						<div class="container-fluid">
-							<a class="navbar-brand" href="../index.html">
-								<img
-									src="../Images/logo.png"
-									alt="logo-header"
-									style="height: 32px;"
-								/>
-							</a>
-							<button
-								class="navbar-toggler rounded-0 border-0"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-
-							<div
-								class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
-								id="navbarSupportedContent"
-							>
-								<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											Products
-										</a>
-										<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-											<li>
-												<a class="dropdown-item p-3" href="../src/payments.html">
-													<div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/payments.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Payments
-														</h6>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item p-3" href="../src/transfers.html"
-													><div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/transfers.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Transfers
-														</h6>
-													</div></a
-												>
-											</li>
-											<li>
-												<a
-													class="dropdown-item p-3"
-													href="../src/payment-system.html"
-													><div class="d-flex align-items-center gap-2">
-														<img
-															src="../Images/dropdown-images/system.png"
-															alt="drp1"
-															height="45"
-														/>
-
-														<h6 class="fw-semibold" style="font-size: 15px;">
-															Payment Ecosystem
-														</h6>
-													</div></a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Careers.html">Careers</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/Contact.html">Contact</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../src/saas.html">Saas</a>
-									</li>
-								</ul>
-								<button
-									class="btn btn-primary rounded-0 text-white fw-bold"
-									type="button"
-									style="font-size: 14px; padding: 10px 20px;"
-								>
-									Become a Merchant
-								</button>
-							</div>
-						</div>
-					</nav>
+			  </div>
+			</div>
+	 	</nav>
+		 <div class="container-fluid">
+			<div class="row justify-content-center mt-5">
+				<div class="col-lg-8 col-md-10 col-12">
+					<div class="text-center mb-5">
+						<h1 class="fw-bold">Why Us?</h1>
+						<p class="fs-6 fw-semibold">
+							PaySwitch is a payment processing company that offers alternative
+							banking solutions to banks, financial institutions, organizations,
+							businesses, and individuals globally. Their integrated payment
+							solutions enable the seamless circulation and exchange of money and
+							values across various transactions (C2C, C2B, B2C, B2B).
+						</p>
+					</div>
 				</div>
 			</div>
-
-			<div
-				class="headline w-100 mt-5 ms-3 me-5 pt-5 overflow-y-scroll vh-100 pb-5 mb-5 d-flex flex-column align-items-center"
-				style="height: 40%;"
-			>
-				<p class="mb-3 fs-1 fw-bold text-center">Why Us?</p>
-				<p class="mb-5 pb-5 fs-6 fw-semibold text-center w-75">
-					PaySwitch is a payment processing company that offers alternative
-					banking solutions to banks, financial institutions, organizations,
-					businesses, and individuals globally. Their integrated payment
-					solutions enable the seamless circulation and exchange of money and
-					values across various transactions (C2C, C2B, B2C, B2B). <br /><br />
-					Their target market includes commercial banks, non-banking financial
-					institutions, telecommunication companies, and payment organizations
-					in Ghana and West Africa. PaySwitch serves a wide range of users, from
-					startups to large organizations, providing flexible systems,
-					simplified programming interfaces, and negotiated rates through their
-					incubator Payments program. Established in 2015, PaySwitch operates
-					with world-class technology platforms, certified compliance with data
-					protection regulations, and adherence to industry standards like ISO
-					27001 and PCI DSS. <br />
-					They operate under the Payment Systems and Service Act, 2019 (Act
-					987).
-				</p>
-				<p class="mb-3 fs-1 fw-bold text-center">Why choose Us?</p>
-				<p class="mb-3 fs-6 fw-semibold text-center">
-					By partnering with us, you can focus on growing your business while we
-					handle the complexities of payment processing, allowing you to save
-					valuable time and resources.
-				</p>
-				<div class="row gap-5 justify-content-center mt-5 mb-5 pb-5">
-					<div class="card border-0 shadow-sm" style="width: 18rem;">
-						<img
-							src="../Images/card-images/Payment Information-rafiki.png"
-							class="card-img-top"
-							alt="payment"
-						/>
-						<div class="card-body">
-							<p class="card-text fw-bold text-center">
-								Experience Seamless Payment Processing:
-							</p>
-							<p class="card-text text-center">
-								Trust our expertise in providing a smooth and streamlined
-								payment processing experience for your business.
-							</p>
+	
+			<div class="row justify-content-center">
+				<div class="col-lg-8 col-md-10 col-12 d-grid d-lg-flex align-items-center gap-4">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="card border-0 shadow-sm h-100">
+							<img src="../Images/card-images/Payment Information-rafiki.png" class="card-img-top" alt="payment">
+							<div class="card-body">
+								<p class="card-text fw-bold text-start">Experience Seamless Payment Processing:</p>
+								<p class="card-text text-start">
+									Trust our expertise in providing a smooth and streamlined payment processing experience for your business.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="card border-0 shadow-sm" style="width: 18rem;">
-						<img
-							src="../Images/card-images/Online transactions-amico.png"
-							class="card-img-top"
-							alt="security"
-						/>
-						<div class="card-body">
-							<p class="card-text fw-bold text-center">
-								Secure and Reliable Transactions:
-							</p>
-							<p class="card-text text-center">
-								Rest easy knowing that our robust payment processing system
-								ensures the highest level of security and reliability for your
-								transactions.
-							</p>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="card border-0 shadow-sm h-100">
+							<img src="../Images/card-images/Online transactions-amico.png" class="card-img-top" alt="security">
+							<div class="card-body">
+								<p class="card-text fw-bold text-start">Secure and Reliable Transactions:</p>
+								<p class="card-text text-start">
+									Rest easy knowing that our robust payment processing system ensures the highest level of security and reliability for your transactions.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="card border-0 shadow-sm" style="width: 18rem;">
-						<img
-							src="../Images/card-images/Scan to pay-amico.png"
-							class="card-img-top"
-							alt="business"
-						/>
-						<div class="card-body">
-							<p class="card-text fw-bold text-center">
-								Customized Solutions to Fit Your Business:
-							</p>
-							<p class="card-text text-center">
-								We understand that every business is unique. Our payment
-								processing solutions are tailored to meet your specific needs
-								and industry requirements.
-							</p>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="card border-0 shadow-sm h-100">
+							<img src="../Images/card-images/Scan to pay-amico.png" class="card-img-top" alt="business">
+							<div class="card-body">
+								<p class="card-text fw-bold text-start">Customized Solutions to Fit Your Business:</p>
+								<p class="card-text text-start">
+									We understand that every business is unique. Our payment processing solutions are tailored to meet your needs and industry requirements.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<p class="mb-3 fs-1 fw-bold text-center">Management</p>
-				<p class="mb-3 fs-6 fw-semi-bold text-center">
-					Meet the people who make magic happen for our clients.
-				</p>
-				<div
-					class="mb-5 pb-5 row row-cols-lg-2 gap-5 justify-content-center align-items-center"
-				>
-					<div class="row row-cols-1 row-cols-md-3 g-5">
+			</div>
+	
+			<div class="row justify-content-center mt-5 mz">
+				<div class="col-lg-8 col-md-10 col-12">
+					<div class="text-center mb-5">
+						<h1 class="fw-bold">Management</h1>
+						<p class="fs-6 fw-semibold">
+							Meet the people who make magic happen for our clients.
+						</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row justify-content-center">
+				<div class="col-lg-9 col-md-10 col-12">
+					<div class="row row-cols-lg-3 row-cols-md-2 g-4">
+						<!-- First Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Sam-Jonah1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Sam-Jonah1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Sam E. Jonah, KBE</h5>
 									<p class="card-text">Director</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Second Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Felix-Addo1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Felix-Addo1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Felix E. Addo</h5>
 									<p class="card-text">Director</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Third Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Kojo-Choi1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Kojo-Choi1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Kojo Choi</h5>
 									<p class="card-text">Director</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Fourth Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Nathan-Lee1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Nathan-Lee1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Nathan Annobi</h5>
 									<p class="card-text">Director, CEO</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Fifth Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Philip1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Philip1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Philip Jimanor ESQ</h5>
 									<p class="card-text">Board Secretary</p>
 								</div>
 							</div>
 						</div>
-
-						<!-- <div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Aaron1.png"
-									class="card-img-top"
-									alt="..."
-								/>
-								<div class="card-body">
-									<h5 class="card-title fw-semibold">Aaron Demenu</h5>
-									<p class="card-text">Chief Technology Officer</p>
-								</div>
-							</div>
-						</div> -->
+	
+						<!-- Sixth Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Kennedy1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Kennedy1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Kennedy M. Akakpo</h5>
 									<p class="card-text">Chief Operations Officer</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Seventh Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/David1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/David1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">David Asiedu</h5>
 									<p class="card-text">Chief Financial Officer</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Eighth Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Emmanuel1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Emmanuel1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Emmanuel B. Narh</h5>
 									<p class="card-text">Head, Audit & Compliance</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Ninth Card -->
 						<div class="col">
-							<div class="card h-100 border-0 shadow-sm">
-								<img
-									src="../Images/Staff/Abigail1.png"
-									class="card-img-top"
-									alt="..."
-								/>
+							<div class="card border-0 shadow-sm h-100">
+								<img src="../Images/Staff/Abigail1.png" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Abigail Ama Amoh</h5>
 									<p class="card-text">Head, HR & Admin</p>
 								</div>
 							</div>
 						</div>
+	
+						<!-- Repeat more management cards here -->
+	
 					</div>
 				</div>
 			</div>
 		</div>
+	
+		<!-- Footer Section -->
+		<footer class="bg-body-secondary p-3">
+			<div class="container">
+				<p class="text-center">&copy; PaySwitch Company 2023 | <a href="https://theteller.net/privacy" class="text-primary">Privacy Policy</a></p>
+			</div>
+		</footer>
 	</body>
 </html>

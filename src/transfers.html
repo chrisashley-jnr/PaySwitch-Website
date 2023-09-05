@@ -11,838 +11,220 @@
 
 		<title>Document</title>
 	</head>
-	<body class="ot-sec overflow-y-auto ps-lg-5 pe-lg-5 ps-md-3 pe-md-3 ms-4 me-4">
-		<div class="header d-none d-lg-block">
-			<nav
-				class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
-			>
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">
-						<img
-						src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 50px;"
-						/>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-white py-lg-3 px-lg-3 p-3">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href=""><img src="/images/logo.png" alt="logo" height="45px"></a>
+			  <button
+				class="navbar-toggler border-0"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarScroll"
+				aria-controls="navbarScroll"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse h-100 flex-grow-0 gap-5 p-3 p-lg-0" id="navbarScroll">
+				<ul
+				  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav gap-lg-3"
+				  style="--bs-scroll-height: 100px;"
+				>
+				  <li class="nav-item">
+					<a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Home</a>
+				  </li>
 
-					<div
-						class="collapse navbar-collapse justify-content-center flex-grow-0"
-						id="navbarSupportedContent"
-					>
-						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Products
-								</a>
-								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-									<li>
-										<a class="dropdown-item p-3" href="../src/payments.html">
-											<div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/payments.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payments
-												</h6>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/transfers.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/transfers.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Transfers
-												</h6>
-											</div></a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/payment-system.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/system.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payment Ecosystem
-												</h6>
-											</div></a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Careers.html">Careers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Contact.html">Contact</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/saas.html">Saas</a>
-							</li>
-						</ul>
-					</div>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 20px;"
-					>
-						Become a Merchant
-					</button>
-				</div>
-			</nav>
-		</div>
-
-		<div class="header d-none d-lg-none d-md-block d-sm-none">
-			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">
-						<img
-						src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 35px;"
-						/>
-					</a>
-					<button
-						class="navbar-toggler rounded-0 border-0"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasExample"
-						aria-controls="offcanvasExample"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div
-						class="offcanvas offcanvas-end p-3 gap-5"
-						tabindex="-1"
-						id="offcanvasExample"
-						aria-labelledby="offcanvasExampleLabel"
-					>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-						<div
-							class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
+				 
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
 						>
-						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Products
+							Products
+						</a>
+						<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+							<li>
+								<a class="dropdown-item p-3" href="../src/payments.html">
+									<div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/payments.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payments
+										</h6>
+									</div>
 								</a>
-								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-									<li>
-										<a class="dropdown-item p-3" href="../src/payments.html">
-											<div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/payments.png"
-													alt="drp1"
-													height="45"
-												/>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/transfers.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/transfers.png"
+											alt="drp1"
+											height="45"
+										/>
 
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payments
-												</h6>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/transfers.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/transfers.png"
-													alt="drp1"
-													height="45"
-												/>
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Transfers
+										</h6>
+									</div></a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/payment-system.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/system.png"
+											alt="drp1"
+											height="45"
+										/>
 
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Transfers
-												</h6>
-											</div></a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/payment-system.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/system.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payment Ecosystem
-												</h6>
-											</div></a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Careers.html">Careers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Contact.html">Contact</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/saas.html">Saas</a>
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payment Ecosystem
+										</h6>
+									</div></a
+								>
 							</li>
 						</ul>
-							<button
-								class="btn btn-primary rounded-0 text-white fw-bold"
-								type="button"
-								style="font-size: 14px; padding: 10px 20px;"
-							>
-								Become a Merchant
-							</button>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
+					</li>
+					<a class="nav-link" href="./src/Whyus.html">Why Us</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Careers.html">Careers</a>
+				  </li>
+				  </li>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Contact.html">Contact</a>
+				  </li>
+				  </li>
+				  </li>
+				</ul>
+				<button
+				class="btn btn-primary rounded-0 text-white fw-bold"
+				type="button"
+				style="font-size: 14px; padding: 10px 20px;"
+			>
+				Become a Merchant
+			</button>
 
-		<div class="header d-md-none">
-			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html">
-						<img
-						src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 32px;"
-						/>
-					</a>
-					<button
-						class="navbar-toggler rounded-0 border-0"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div
-						class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
-						id="navbarSupportedContent"
-					>
-					<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-						<li class="nav-item dropdown">
+			  </div>
+			</div>
+	 	</nav>
+		<div class="container-fliud d-flex flex-column" style="min-height: 100vh;">
+			<div class="row p-5">
+				<div class="col-lg-6 col-md-12">
+					<div class="text-start">
+						<h2 class="font-weight-bold mt-lg-5" style="font-size: 48px;">Bulk Transfer Solutions:
+						Simplifying Large-Scale Transactions:</h2>
+						<p class="lead mt-lg-4">Welcome to our comprehensive Bulk Transfer Solutions! We understand the challenges of managing and executing large-scale transactions, and our integrated API and user-friendly dashboard are here to make the process seamless and efficient.</p>
 							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Products
-							</a>
-							<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-								<li>
-									<a class="dropdown-item p-3" href="../src/payments.html">
-										<div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/payments.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Payments
-											</h6>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item p-3" href="../src/transfers.html"
-										><div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/transfers.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Transfers
-											</h6>
-										</div></a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item p-3" href="../src/payment-system.html"
-										><div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/system.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Payment Ecosystem
-											</h6>
-										</div></a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Careers.html">Careers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Contact.html">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/saas.html">Saas</a>
-						</li>
-					</ul>
-						<button
-							class="btn btn-primary rounded-0 text-white fw-bold"
+							class="btn btn-primary mt-lg-4 rounded-0 text-white fw-bold"
 							type="button"
-							style="font-size: 14px; padding: 10px 20px;"
+							style="font-size: 14px; padding: 10px 40px;"
+							href="https://theteller.net/signup"
 						>
-							Become a Merchant
-						</button>
+							Get Started
+						</a>
 					</div>
 				</div>
-			</nav>
-		</div>
-
-		<!-- Desktop -->
-		<div class="content m-2 mt-5 d-none d-lg-flex flex-column">
-			<div
-				class="hero d-flex align-items-center justify-content-around flex-row mt-5"
-				style="padding-top: 3%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 60px;"
-					>
-						Bulk Transfer Solutions: <br> Simplifying Large-Scale <br> Transactions
-					</p>
-					<p
-						class="subtext fs-5"
-						style="font-weight: 450; color: #011b33; width: 70%;"
-					>
-						Welcome to our comprehensive Bulk Transfer Solutions! We understand
-						the challenges of managing and executing large-scale transactions,
-						and our integrated API and user-friendly dashboard are here to make
-						the process seamless and efficient.
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
-				</div>
-				<div class="image shadow">
-					<img src="../Images/Transfer.jpg" alt="POS" style="height: 520px;" />
+				<div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+					<img src="/Images/Transfer.jpg" alt="Responsive Image" class="img-fluid">
 				</div>
 			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						What we offer:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-center justify-content-between flex-row"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. API Integration for Effortless Bulk Transfers
-						</p>
-						<img
-							src="../Images/API integration.png"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext w-75 mt-4 fw-medium">
-							Integrate our powerful API into your systems to automate and
+			
+			<hr class="d-flex pt-3">
+
+			<p class="ps-5 fs-2 fw-bold"> What we Offer:</p>
+
+			<div class="row justify-content-center align-items-center px-5">
+				<!-- First Column -->
+				<div class="col-md-6 gap-5">
+					<div class="text-start">
+						<h2 class="font-weight-bold fs-5">1. API Integration for Effortless Bulk Transfers</h2>
+						<img src="/Images/API integration.png" alt="Image 1" class="img-fluid">
+						<p class="lead mt-3">Integrate our powerful API into your systems to automate and
 							streamline your bulk transfer operations. Our API seamlessly
 							connects with your software, ensuring accurate, secure, and rapid
 							instant transactions to all mobile money wallets and bank accounts
-							in Ghana.
-						</p>
+							in Ghana.</p>
 					</div>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. User-Friendly Dashboard for Intuitive Management
-						</p>
-						<img
-							src="../Images/dashboard-bulk.png"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext w-75 mt-4 fw-medium">
-							Our intuitive dashboard provides a centralized hub for managing
+				</div>
+				
+				<!-- Second Column -->
+				<div class="col-md-6 gap-5">
+					<div class="text-start">
+						<h2 class="font-weight-bold fs-5">2. User-Friendly Dashboard for Intuitive Management</h2>
+						<img src="/Images/dashboard-bulk.png" alt="Image 2" class="img-fluid">
+						<p class="lead mt-3">Our intuitive dashboard provides a centralized hub for managing
 							bulk transfers. With user-friendly features, you can upload
 							recipient data, customize transfer parameters, track progress, and
-							access insightful reports.
-						</p>
+							access insightful reports.</p>
 					</div>
 				</div>
 			</div>
-			<hr style="margin-top: 5%; margin-bottom: 5%;" />
-			<div
-				class="hero d-flex align-items-center justify-content-around flex-row mt-5"
-				style="padding-top: 6%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 60px;"
-					>
-						Remittance Termination: <br> Instant Last-Mile Transactions
-					</p>
-					<p
-						class="subtext fs-5"
-						style="font-weight: 450; color: #011b33; width: 80%;"
-					>
-					Experience a world-class remitance termination that ensures your transactions reach their destination instanty and seamlessly on any Mobile Money wallet or Bank Account. 
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
-				</div>
-				<div class="image shadow">
-					<img src="../Images/remit.jpg" alt="POS" style="height: 520px;" />
-				</div>
-			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Why Choose Our Remittance Termination:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-center justify-content-between flex-row"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. Streamlined Termination Process
-						</p>
-						<img
-							src="../Images/Streamlined.jpg"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext w-100 mt-4 fw-medium">
-							Our platform offers a streamlined process for terminating
-							remittance transactions, ensuring that you can finalize
-							transactions quickly and efficiently.
-						</p>
-					</div>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. Security at the Core
-						</p>
-						<img
-							src="../Images/secured.jpg"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext w-75 mt-4 fw-medium">
-							Security is paramount in remittance termination. Our advanced
-							security measures protect your sensitive data and financial
-							information, giving you peace of mind throughout the process.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!-- Tablet -->
-		<div class="content m-2 mt-5 d-none d-md-block d-lg-none">
-			<div
-				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
-				style="padding-top: 3%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Bulk Transfer Solutions: <br> Simplifying Large-Scale Transactions
-					</p>
-					<p
-						class="subtext fs-6"
-						style="font-weight: 450; color: #011b33;"
-					>
-						Welcome to our comprehensive Bulk Transfer Solutions! We understand
-						the challenges of managing and executing large-scale transactions,
-						and our integrated API and user-friendly dashboard are here to make
-						the process seamless and efficient.
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
-				</div>
-				<div class="image shadow mt-5">
-					<img src="./Images/Transfer.jpg" alt="POS" style="height: 450px;" />
-				</div>
-			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						What we offer:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-start justify-content-between flex-column"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. API Integration for Effortless Bulk Transfers
-						</p>
-						<img
-							src="../Images/API integration.png"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Integrate our powerful API into your systems to automate and
-							streamline your bulk transfer operations. Our API seamlessly
-							connects with your software, ensuring accurate, secure, and rapid
-							instant transactions to all mobile money wallets and bank accounts
-							in Ghana.
-						</p>
-					</div>
-					<hr>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. User-Friendly Dashboard for Intuitive Management
-						</p>
-						<img
-							src="../Images/dashboard-bulk.png"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Our intuitive dashboard provides a centralized hub for managing
-							bulk transfers. With user-friendly features, you can upload
-							recipient data, customize transfer parameters, track progress, and
-							access insightful reports.
-						</p>
-					</div>
-				</div>
-			</div>
-			<hr style="margin-top: 5%; margin-bottom: 5%;" />
-			<div
-				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
-				style="padding-top: 6%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Remittance Termination: <br> Instant Last-Mile Transactions
-					</p>
-					<p
-						class="subtext fs-5"
-						style="font-weight: 450; color: #011b33;"
-					>
-					Experience a world-class remitance termination that ensures your transactions reach their destination instanty and seamlessly on any Mobile Money wallet or Bank Account. 
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
-				</div>
-				<div class="image shadow mt-5">
-					<img src="../Images/remit.jpg" alt="POS" style="height: 520px;" />
-				</div>
-			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Why Choose Our Remittance Termination:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-center justify-content-between flex-column"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. Streamlined Termination Process
-						</p>
-						<img
-							src="../Images/Streamlined.jpg"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext  mt-4 fw-medium">
-							Our platform offers a streamlined process for terminating
-							remittance transactions, ensuring that you can finalize
-							transactions quickly and efficiently.
-						</p>
-					</div>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. Security at the Core
-						</p>
-						<img
-							src="../Images/secured.jpg"
-							alt="api"
-							height="400"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Security is paramount in remittance termination. Our advanced
-							security measures protect your sensitive data and financial
-							information, giving you peace of mind throughout the process.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+			<hr class="d-flex pt-3">
 
-		<!-- Phone -->
-		<div class="content m-2 mt-5 d-block d-md-none">
-			<div
-				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
-				style="padding-top: 3%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Bulk Transfer Solutions: <br> Simplifying Large-Scale Transactions
-					</p>
-					<p
-						class="subtext fs-6"
-						style="font-weight: 450; color: #011b33;"
-					>
-						Welcome to our comprehensive Bulk Transfer Solutions! We understand
-						the challenges of managing and executing large-scale transactions,
-						and our integrated API and user-friendly dashboard are here to make
-						the process seamless and efficient.
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
+			<div class="row p-5">
+				<div class="col-lg-6 col-md-12">
+					<div class="text-start">
+						<h2 class="font-weight-bold  mt-lg-5" style="font-size: 48px;">Remittance Termination:
+							Instant Last-Mile Transactions:</h2>
+						<p class="lead mt-lg-4">Experience a world-class remitance termination that ensures your transactions reach their destination instanty and seamlessly on any Mobile Money wallet or Bank Account.</p>
+							<a
+							class="btn btn-primary mt-lg-4 rounded-0 text-white fw-bold"
+							type="button"
+							style="font-size: 14px; padding: 10px 40px;"
+							href="https://theteller.net/documentation"
+						>
+							Get Started
+						</a>
+					</div>
 				</div>
-				<div class="image shadow mt-5">
-					<img src="../Images/Transfer.jpg" alt="POS" style="height: 250px;" />
+				<div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+					<img src="/Images/remit.jpg" alt="Responsive Image" class="img-fluid">
 				</div>
 			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						What we offer:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-start justify-content-between flex-column"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. API Integration for Effortless Bulk Transfers
-						</p>
-						<img
-							src="../Images/API integration.png"
-							alt="api"
-							height="200"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Integrate our powerful API into your systems to automate and
-							streamline your bulk transfer operations. Our API seamlessly
-							connects with your software, ensuring accurate, secure, and rapid
-							instant transactions to all mobile money wallets and bank accounts
-							in Ghana.
-						</p>
+			
+			<hr class="d-flex pt-3">
+
+			<p class="ps-5 fs-2 fw-bold">Why Choose Our Remittance Termination:</p>
+
+			<div class="row justify-content-center align-items-center px-5">
+				<!-- First Column -->
+				<div class="col-md-6 gap-5">
+					<div class="text-start">
+						<h2 class="font-weight-bold fs-5">1. Streamlined Termination Process</h2>
+						<img src="/Images/Streamlined.jpg" alt="Image 1" class="img-fluid">
+						<p class="lead mt-3">Our platform offers a streamlined process for terminating remittance transactions, ensuring that you can finalize transactions quickly and efficiently..</p>
 					</div>
-					<hr>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. User-Friendly Dashboard for Intuitive Management
-						</p>
-						<img
-							src="../Images/dashboard-bulk.png"
-							alt="api"
-							height="200"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Our intuitive dashboard provides a centralized hub for managing
-							bulk transfers. With user-friendly features, you can upload
-							recipient data, customize transfer parameters, track progress, and
-							access insightful reports.
-						</p>
+				</div>
+				
+				<!-- Second Column -->
+				<div class="col-md-6 gap-5">
+					<div class="text-start">
+						<h2 class="font-weight-bold fs-5">2. Security at the Core</h2>
+						<img src="/Images/Secured.jpg" alt="Image 2" class="img-fluid" style="height: 400px;">
+						<p class="lead mt-3">Security is paramount in remittance termination. Our advanced security measures protect your sensitive data and financial information, giving you peace of mind throughout the process.</p>
 					</div>
 				</div>
 			</div>
-			<hr style="margin-top: 5%; margin-bottom: 5%;" />
-			<div
-				class="hero d-flex align-items-start justify-content-around flex-column mt-5"
-				style="padding-top: 6%;"
-			>
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Remittance Termination: <br> Instant Last-Mile Transactions
-					</p>
-					<p
-						class="subtext fs-5"
-						style="font-weight: 450; color: #011b33;"
-					>
-					Experience a world-class remitance termination that ensures your transactions reach their destination instanty and seamlessly on any Mobile Money wallet or Bank Account. 
-					</p>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 40px; margin-top: 2%;"
-					>
-						Get Started
-					</button>
-				</div>
-				<div class="image shadow mt-5">
-					<img src="../Images/remit.jpg" alt="POS" style="height: 320px;" />
-				</div>
-			</div>
-			<div class="theTeller" style="padding-top: 10%;">
-				<div class="paragragh" style="gap: 5% !important;">
-					<p
-						class="headline-text"
-						style="font-weight: bolder; color: #011b33; font-size: 40px;"
-					>
-						Why Choose Our Remittance Termination:
-					</p>
-				</div>
-				<div
-					class="offers d-flex align-items-center justify-content-between flex-column"
-					style="gap: 7%;"
-				>
-					<div class="api">
-						<p class="headline fw-bold fs-3">
-							1. Streamlined Termination Process
-						</p>
-						<img
-							src="../Images/Streamlined.jpg"
-							alt="api"
-							height="250"
-							class="shadow-sm"
-						/>
-						<p class="subtext  mt-4 fw-medium">
-							Our platform offers a streamlined process for terminating
-							remittance transactions, ensuring that you can finalize
-							transactions quickly and efficiently.
-						</p>
-					</div>
-					<div class="dashboard">
-						<p class="headline fw-bold fs-3">
-							2. Security at the Core
-						</p>
-						<img
-							src="../Images/secured.jpg"
-							alt="api"
-							height="250"
-							class="shadow-sm"
-						/>
-						<p class="subtext mt-4 fw-medium">
-							Security is paramount in remittance termination. Our advanced
-							security measures protect your sensitive data and financial
-							information, giving you peace of mind throughout the process.
-						</p>
-					</div>
-				</div>
-			</div>
+			
 		</div>
+	
+		<!-- Footer Section -->
+		<footer class="bg-body-secondary p-3">
+			<div class="container">
+				<p class="text-center">&copy; PaySwitch Company 2023 | <a href="https://theteller.net/privacy" class="text-primary">Privacy Policy</a></p>
+			</div>
+		</footer>
 	</body>
 </html>

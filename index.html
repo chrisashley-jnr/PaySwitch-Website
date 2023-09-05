@@ -5,895 +5,280 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="../src/main.css" />
+		<link rel="stylesheet" href="/src/main.css" />
 
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 		<title>PaySwitch</title>
 	</head>
-	<body class="d-flex flex-column ps-lg-5 pe-lg-5 ps-md-4 pe-md-4 ms-4 me-4">
-		<div class="header d-none d-lg-block">
-			<nav
-				class="navbar navbar-expand-lg bg-body-transparent mt-4 d-lg-block d-md-none"
-			>
-				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
-						<img
-							src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 50px;"
-						/>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-white py-lg-3 px-lg-3 p-3">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href=""><img src="/images/logo.png" alt="logo" height="45px"></a>
+			  <button
+				class="navbar-toggler border-0"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarScroll"
+				aria-controls="navbarScroll"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse h-100 flex-grow-0 gap-5 p-3 p-lg-0" id="navbarScroll">
+				<ul
+				  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav gap-lg-3"
+				  style="--bs-scroll-height: 100px;"
+				>
+				  <li class="nav-item">
+					<a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Home</a>
+				  </li>
 
-					<div
-						class="collapse navbar-collapse justify-content-center flex-grow-0"
-						id="navbarSupportedContent"
-					>
-						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Products
+				 
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Products
+						</a>
+						<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+							<li>
+								<a class="dropdown-item p-3" href="../src/payments.html">
+									<div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/payments.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payments
+										</h6>
+									</div>
 								</a>
-								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-									<li>
-										<a class="dropdown-item p-3" href="../src/payments.html">
-											<div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/payments.png"
-													alt="drp1"
-													height="45"
-												/>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/transfers.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/transfers.png"
+											alt="drp1"
+											height="45"
+										/>
 
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payments
-												</h6>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/transfers.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/transfers.png"
-													alt="drp1"
-													height="45"
-												/>
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Transfers
+										</h6>
+									</div></a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/payment-system.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/system.png"
+											alt="drp1"
+											height="45"
+										/>
 
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Transfers
-												</h6>
-											</div></a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/payment-system.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/system.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payment Ecosystem
-												</h6>
-											</div></a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Careers.html">Careers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Contact.html">Contact</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/saas.html">Saas</a>
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payment Ecosystem
+										</h6>
+									</div></a
+								>
 							</li>
 						</ul>
-					</div>
-					<button
-						class="btn btn-primary rounded-0 text-white fw-bold"
-						type="button"
-						style="font-size: 14px; padding: 10px 20px;"
-					>
-						Become a Merchant
-					</button>
-				</div>
-			</nav>
-		</div>
+					</li>
+					<a class="nav-link" href="./src/Whyus.html">Why Us</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Careers.html">Careers</a>
+				  </li>
+				  </li>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Contact.html">Contact</a>
+				  </li>
+				  </li>
+				  </li>
+				</ul>
+				<a
+				class="btn btn-primary rounded-0 text-white fw-bold"
+				type="button"
+				style="font-size: 14px; padding: 10px 20px;"
+				href="https://theteller.net/signup"
+			>
+				Become a Merchant
+			</a>
 
-		<div class="header d-none d-lg-none d-md-block d-sm-none">
-			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
-						<img
-							src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 35px;"
-						/>
+			  </div>
+			</div>
+	 	</nav>
+		 <div class="container-fluid d-md-flex flex-md-row flex-lg-row" style="min-height: 100vh;">
+			<!-- Left Section -->
+			<div class="text-white width-extension w-50 p-3 p-md-5 p-lg-5 mt-lg-5 mt-md-2 d-flex flex-column justify-content-md-center justify-content-lg-start">
+				<div class="row mt-3">
+					<div class="home-text">
+						<p class="animate-text-desktop">
+							<span class="">Streamlined Payment,</span>
+							<span class="">Simplified Payment,</span>
+							<span class="">Seamless Payment,</span>
+						</p>
+					</div>
+					<h1 class="mt-2" style="color: #011b33;">Every Step of The Way.</h1>
+				</div>
+	
+				<div class="subtext fw-semibold" style="font-size: 18px; margin-top: 5%; color: #011b33;">
+					Experience hassle-free transactions with our seamless payment solutions. Say goodbye to payment delays and complexities, and enjoy smooth, secure, and efficient financial transactions.
+				</div>
+				<div class="buttons d-flex gap-3" style="margin-top: 6%;">
+					<a class="btn btn-primary rounded-0 text-white fw-bold" type="button" style="font-size: 16px; padding: 8px 45px;" href="https://theteller.net/signup">
+						Get Started
 					</a>
-					<button
-						class="navbar-toggler rounded-0 border-0"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasExample"
-						aria-controls="offcanvasExample"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div
-						class="offcanvas offcanvas-end p-3 gap-5"
-						tabindex="-1"
-						id="offcanvasExample"
-						aria-labelledby="offcanvasExampleLabel"
-					>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-						<div
-							class="d-flex justify-content-between flex-column flex-grow-0 gap-5"
-						>
-						<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Products
-								</a>
-								<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-									<li>
-										<a class="dropdown-item p-3" href="../src/payments.html">
-											<div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/payments.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payments
-												</h6>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/transfers.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/transfers.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Transfers
-												</h6>
-											</div></a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item p-3" href="../src/payment-system.html"
-											><div class="d-flex align-items-center gap-2">
-												<img
-													src="../Images/dropdown-images/system.png"
-													alt="drp1"
-													height="45"
-												/>
-
-												<h6 class="fw-semibold" style="font-size: 15px;">
-													Payment Ecosystem
-												</h6>
-											</div></a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Careers.html">Careers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/Contact.html">Contact</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../src/saas.html">Saas</a>
-							</li>
-						</ul>
-							<button
-								class="btn btn-primary rounded-0 text-white fw-bold"
-								type="button"
-								style="font-size: 14px; padding: 10px 20px;"
-							>
-								Become a Merchant
-							</button>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
-
-		<div class="header d-md-none">
-			<nav class="navbar navbar-expand-lg bg-body-transparent mt-4 d-md-flex">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
-						<img
-							src="../Images/logo.png"
-							alt="logo-header"
-							style="height: 32px;"
-						/>
+					<a class="btn bt-ot rounded-0 btn-outline-primary text-primary fw-bold" type="button" style="font-size: 16px; padding: 8px 45px;" href="">
+						Integrate
 					</a>
-					<button
-						class="navbar-toggler rounded-0 border-0"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div
-						class="collapse navbar-collapse justify-content-between flex-grow-0 gap-3"
-						id="navbarSupportedContent"
-					>
-					<ul class="navbar-nav mb-2 mb-lg-0 gap-3 fw-semibold">
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Products
-							</a>
-							<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
-								<li>
-									<a class="dropdown-item p-3" href="../src/payments.html">
-										<div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/payments.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Payments
-											</h6>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item p-3" href="../src/transfers.html"
-										><div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/transfers.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Transfers
-											</h6>
-										</div></a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item p-3" href="../src/payment-system.html"
-										><div class="d-flex align-items-center gap-2">
-											<img
-												src="../Images/dropdown-images/system.png"
-												alt="drp1"
-												height="45"
-											/>
-
-											<h6 class="fw-semibold" style="font-size: 15px;">
-												Payment Ecosystem
-											</h6>
-										</div></a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Whyus.html">Why Us?</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Careers.html">Careers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/Contact.html">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../src/saas.html">Saas</a>
-						</li>
-					</ul>
-						<button
-							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
-							style="font-size: 14px; padding: 10px 20px;"
-						>
-							Become a Merchant
-						</button>
-					</div>
 				</div>
-			</nav>
-		</div>
-
-		<!-- Desktop -->
-		<div class="main vh-100 h-auto d-none d-lg-flex">
-			<div class="left pt-3" style="width: 60%;">
-				<div class="main-content w-100">
-					<div class="row mt-5 pt-5 w-75">
-						<div class="home-text">
-							<p class="animate-text-desktop">
-								<span class="">Streamlined Payment,</span>
-								<span class="">Simplified Payment,</span>
-								<span class="">Seamless Payment,</span>
-							</p>
-						</div>
-						<h1 class="mt-3" style="color: #011b33;">Every Step of The Way.</h1>
-					</div>
-
-					<div
-						class="subtext fw-semibold"
-						style="font-size: 18px; width: 65%; margin-top: 6%; color: #011b33;"
-					>
-						Experience hassle-free transactions with our seamless payment
-						solutions. Say goodbye to payment delays and complexities, and enjoy
-						smooth, secure, and efficient financial transactions.
-					</div>
-					<div class="buttons d-flex gap-3" style="margin-top: 6%;">
-						<button
-							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Get Started
-						</button>
-						<button
-							class="btn bt-ot rounded-0 btn-outline-primary text-primary fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Integrate
-						</button>
-					</div>
-					<div class="brands" style="margin-top: 13%;">
-						<p>Brands that have embraced our platform:</p>
-						<div class="slider-container">
-							<div class="logo-slider">
+				<div class="brands" style="margin-top: 12%;">
+					<p>Brands that have embraced our platform:</p>
+					<div class="slider-container">
+						<!-- Add your logo slider here -->
+						<div class="logo-slider">
 								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
+									<img src="/images/brand-logos/ADB.png" alt="Logo 1" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
+									<img src="/images/brand-logos/CBG.png" alt="Logo 2" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
+									<img src="/images/brand-logos/Compass.png" alt="Logo 3" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
+									<img src="/images/brand-logos/Enterprise.png" alt="Logo 4" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
+									<img src="/images/brand-logos/FEDCO.png" alt="Logo 5" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
+									<img src="/images/brand-logos/GCB.png" alt="Logo 6" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
+									<img src="/images/brand-logos/Melcom.png" alt="Logo 7" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
+									<img src="/images/brand-logos/Oriflame.png" alt="Logo 8" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+									<img src="/images/brand-logos/Tropofarms.png" alt="Logo 9" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+									<img src="/images/brand-logos/Vantagepay.png" alt="Logo 0" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
+									<img src="/images/brand-logos/ADB.png" alt="Logo 1" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
+									<img src="/images/brand-logos/CBG.png" alt="Logo 2" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
+									<img src="/images/brand-logos/Compass.png" alt="Logo 3" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
+									<img src="/images/brand-logos/Enterprise.png" alt="Logo 4" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
+									<img src="/images/brand-logos/FEDCO.png" alt="Logo 5" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
+									<img src="/images/brand-logos/GCB.png" alt="Logo 6" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
+									<img src="/images/brand-logos/Melcom.png" alt="Logo 7" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
+									<img src="/images/brand-logos/Oriflame.png" alt="Logo 8" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+									<img src="/images/brand-logos/Tropofarms.png" alt="Logo 9" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+									<img src="/images/brand-logos/Vantagepay.png" alt="Logo 0" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
+									<img src="/images/brand-logos/ADB.png" alt="Logo 1" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
+									<img src="/images/brand-logos/CBG.png" alt="Logo 2" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
+									<img src="/images/brand-logos/Compass.png" alt="Logo 3" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
+									<img src="/images/brand-logos/Enterprise.png" alt="Logo 4" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
+									<img src="/images/brand-logos/FEDCO.png" alt="Logo 5" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
+									<img src="/images/brand-logos/GCB.png" alt="Logo 6" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
+									<img src="/images/brand-logos/Melcom.png" alt="Logo 7" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
+									<img src="/images/brand-logos/Oriflame.png" alt="Logo 8" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
+									<img src="/images/brand-logos/Tropofarms.png" alt="Logo 9" />
 								</div>
 								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
+									<img src="/images/brand-logos/Vantagepay.png" alt="Logo 0" />
 								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-			<div
-				class="right d-grid p-4 justify-content-center align-content-center g-2 image-container"
-				style="width: 40%;"
-			>
-				<div class="z-2 position-absolute" style="padding-top: 6%;">
-					<span
-						><img
-							src="./Images/img-3.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
-				</div>
-				<div
-					class="z-1 position-absolute"
-					style="padding-left: 2%; padding-top: 25%;"
-				>
-					<span
-						><img
-							src="./Images/img-2.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-							aria-placeholder="some text"
-					/></span>
-				</div>
-				<div
-					class="z-0 position-absolute"
-					style="padding-left: 12%; padding-top: 15%;"
-				>
-					<span
-						><img
-							src="./Images/img-1.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
+	
+			<!-- Right Section -->
+			<div class="w-50 p-lg-5 d-none d-lg-flex">
+				<div id="slideshow" class="w-100">
+					<img src="/Images/img-1.png" class="slide visible img-fluid" alt="Image 1" style="height: 600px;">
+					<img src="/Images/img-2.png" class="slide img-fluid" alt="Image 2" style="height: 600px;">
+					<img src="/Images/img-3.png" class="slide img-fluid" alt="Image 3" style="height: 600px;">
 				</div>
 			</div>
 		</div>
-
-		<!-- Tablet -->
-		<div class="main d-none d-md-block d-lg-none">
-			<div class="left pt-3">
-				<div class="main-content">
-					<div class="row mt-5">
-						<div class="home-text">
-							<p class="animate-text-tablet">
-								<span>Streamlined Payment,</span>
-								<span>Simplified Payment,</span>
-								<span>Seamless Payment,</span>
-							</p>
-						</div>
-						<h1 class="mt-3 text-center" style="color: #011b33;">
-							Every Step of The Way.
-						</h1>
-					</div>
-
-					<div
-						class="subtext fw-semibold text-center"
-						style="font-size: 20px; margin-top: 6%; color: #011b33;"
-					>
-						Experience hassle-free transactions with our seamless payment
-						solutions. Say goodbye to payment delays and complexities, and enjoy
-						smooth, secure, and efficient financial transactions.
-					</div>
-					<div
-						class="buttons d-flex justify-content-center gap-3"
-						style="margin-top: 6%;"
-					>
-						<button
-							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Get Started
-						</button>
-						<button
-							class="btn bt-ot rounded-0 btn-outline-primary text-primary fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Integrate
-						</button>
-					</div>
-					<div class="brands text-center" style="margin-top: 13%;">
-						<p>Brands that have embraced our platform:</p>
-						<div class="slider-container">
-							<div class="logo-slider">
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			 
+	
+			
+	
+		<!-- Footer Section -->
+		<footer class="bg-body-secondary p-3">
+			<div class="container">
+				<p class="text-center">&copy; PaySwitch Company 2023 | <a href="https://theteller.net/privacy" class="text-primary">Privacy Policy</a></p>
 			</div>
-			<div
-				class="right d-flex p-4 justify-content-center align-content-center gap-2 image-container"
-			>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-3.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
-				</div>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-2.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-							aria-placeholder="some text"
-					/></span>
-				</div>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-1.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Phone -->
-		<div class="main d-block d-md-none">
-			<div class="left pt-3">
-				<div class="main-content">
-					<div class="row mt-5">
-						<div class="home-text">
-							<p class="animate-text-phone">
-								<span>Streamlined Payment,</span>
-								<span>Simplified Payment,</span>
-								<span>Seamless Payment,</span>
-							</p>
-						</div>
-						<h1 class="mt-1 text-center" style="color: #011b33;">
-							Every Step of The Way.
-						</h1>
-					</div>
-
-					<div
-						class="subtext fw-semibold text-center"
-						style="font-size: 15px; margin-top: 6%; color: #011b33;"
-					>
-						Experience hassle-free transactions with our seamless payment
-						solutions. Say goodbye to payment delays and complexities, and enjoy
-						smooth, secure, and efficient financial transactions.
-					</div>
-					<div
-						class="buttons d-flex justify-content-center align-content-center gap-3"
-						style="margin-top: 6%;"
-					>
-						<button
-							class="btn btn-primary rounded-0 text-white fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Get Started
-						</button>
-						<button
-							class="btn bt-ot rounded-0 btn-outline-primary text-primary fw-bold"
-							type="button"
-							style="font-size: 16px; padding: 8px 45px;"
-						>
-							Integrate
-						</button>
-					</div>
-					<div class="brands text-center" style="margin-top: 13%;">
-						<p>Brands that have embraced our platform:</p>
-						<div class="slider-container">
-							<div class="logo-slider">
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/ADB.png" alt="Logo 1" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/CBG.png" alt="Logo 2" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Compass.png" alt="Logo 3" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Enterprise.png" alt="Logo 4" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/FEDCO.png" alt="Logo 5" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/GCB.png" alt="Logo 6" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Melcom.png" alt="Logo 7" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Oriflame.png" alt="Logo 8" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Tropofarms.png" alt="Logo 9" />
-								</div>
-								<div class="logo">
-									<img src="./Images/brand-logos/Vantagepay.png" alt="Logo 0" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div
-				class="right d-flex p-4 justify-content-center align-content-center gap-2 image-container"
-			>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-3.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
-				</div>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-2.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-							aria-placeholder="some text"
-					/></span>
-				</div>
-				<div class="" style="">
-					<span
-						><img
-							src="./Images/img-1.png"
-							alt=""
-							class="img-fluid slide right-img right-im rounded-1 shadow-lg"
-					/></span>
-				</div>
-			</div>
-		</div>
+		</footer>
+		
+	
 		<script>
-			const images = document.querySelectorAll(".right-img");
-			let currentIndex = 0;
+			const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
 
-			function showNextImage() {
-				images[currentIndex].style.transition = "opacity 0.2s ease-out"; // Smooth transition
-				images[currentIndex].style.opacity = 0.1; // Reset opacity for current image
+        function nextSlide() {
+            slides[currentSlide].classList.remove('visible');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('visible');
+        }
 
-				currentIndex = (currentIndex + 1) % images.length; // Cycle through images
-
-				images[currentIndex].style.transition = "opacity 0.2s ease-in-out"; // Smooth transition
-				images[currentIndex].style.opacity = 1; // Display next image with full opacity
-			}
-
-			// Automatically switch images every 3 seconds
-			setInterval(showNextImage, 1500);
+        // Change slide every 2 seconds (2000 milliseconds)
+        setInterval(nextSlide, 5000);
 		</script>
-		<script src="./src/animate.js/text1.js"></script>
+		<script src="/src/animate.js/text1.js"></script>
+		 
 	</body>
 </html>

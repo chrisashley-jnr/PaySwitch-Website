@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../src/main.css" />
+
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<title>PaySwitch</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-white py-lg-3 px-lg-3 p-3">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href=""><img src="/images/logo.png" alt="logo" height="45px"></a>
+			  <button
+				class="navbar-toggler border-0"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarScroll"
+				aria-controls="navbarScroll"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse h-100 flex-grow-0 gap-5 p-3 p-lg-0" id="navbarScroll">
+				<ul
+				  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav gap-lg-3"
+				  style="--bs-scroll-height: 100px;"
+				>
+				  <li class="nav-item">
+					<a class="nav-link active fw-semibold" aria-current="page" href="./index.html">Home</a>
+				  </li>
+
+				 
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Products
+						</a>
+						<ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+							<li>
+								<a class="dropdown-item p-3" href="../src/payments.html">
+									<div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/payments.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payments
+										</h6>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/transfers.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/transfers.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Transfers
+										</h6>
+									</div></a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item p-3" href="../src/payment-system.html"
+									><div class="d-flex align-items-center gap-2">
+										<img
+											src="./images/dropdown-images/system.png"
+											alt="drp1"
+											height="45"
+										/>
+
+										<h6 class="fw-semibold" style="font-size: 15px;">
+											Payment Ecosystem
+										</h6>
+									</div></a
+								>
+							</li>
+						</ul>
+					</li>
+					<a class="nav-link" href="./src/Whyus.html">Why Us</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Careers.html">Careers</a>
+				  </li>
+				  </li>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./src/Contact.html">Contact</a>
+				  </li>
+				  </li>
+				  </li>
+				</ul>
+				<button
+				class="btn btn-primary rounded-0 text-white fw-bold"
+				type="button"
+				style="font-size: 14px; padding: 10px 20px;"
+			>
+				Become a Merchant
+			</button>
+
+			  </div>
+			</div>
+	 	</nav>
+		 <div class="container-fluid">
+			<div class="row justify-content-center mt-3">
+				<!-- Text Side -->
+				<div class="col-lg-6 col-md-6 col-12 p-5 mt-5">
+					<div class="text-start">
+						<h1 class="fw-bold">Contact Sales</h1>
+					</div>
+					<p class="mb-5 pb-5 fs-6 fw-semibold" style="width: 70%;">
+						The future of payments is brighter than ever, and it's waiting for
+						you. Join hands with PaySwitch and experience a seamless, secure,
+						and efficient payment ecosystem that unlocks new opportunities for
+						your business. Say yes to innovation. <br />
+						<br />
+						Say yes to growth. Say yes to PaySwitch. Ready to embark on this
+						exciting journey? Contact us today and let's revolutionize your
+						payment experience together.
+					</p>
+					<div class="contact-info sha">
+						<p class="resume fs-6 fw-semibold">
+							Email us at
+							<a href="#" class="fw-bold">ask@payswitch.com</a> Or Call us on
+							<a href="#" class="fw-bold">+233 (0) 244 332 134</a>
+						</p>
+					</div>
+				</div>
+	
+				<!-- Form Side -->
+				<div class="col-lg-6 col-md-6 col-12 p-5">
+					<form
+						class="form-container d-flex flex-column mt-5 border border-1 border rounded-0 p-5 gap-2 shadow-lg"
+						action="send_sales_email.php"
+						method="POST"
+						id="contactSales-form"
+					>
+						<!-- Name Fields -->
+						<div class="mb-3 d-grid d-lg-flex justify-content-lg-between gap-4">
+							<div class="mb-3 w-100">
+								<label for="FirstName" class="form-label">First Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="FirstName"
+									placeholder="E.g Chris"
+									required
+								/>
+							</div>
+							<div class="mb-3 w-100">
+								<label for="LastName" class="form-label">Last Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="LastName"
+									placeholder="E.g Ashley"
+									required
+								/>
+							</div>
+						</div>
+	
+						<!-- Email -->
+						<div class="mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input
+								type="email"
+								class="form-control"
+								id="email"
+								placeholder="E.g work@mail.com"
+								required
+							/>
+						</div>
+	
+						<!-- Phone Number -->
+						<div class="mb-3">
+							<label for="phone" class="form-label">Phone Number</label>
+							<input
+								type="text"
+								class="form-control"
+								id="phone"
+								placeholder="Eg. +233 012 345 6789"
+								required
+							/>
+						</div>
+	
+						<!-- Company Website -->
+						<div class="mb-3">
+							<label for="website" class="form-label">Company Website</label>
+							<input
+								type="text"
+								class="form-control"
+								id="website"
+								placeholder="E.g Company-website.com"
+								required
+							/>
+						</div>
+	
+						<!-- Company Size -->
+						<div class="mb-3">
+							<label for="size" class="form-label">Company Size</label>
+							<select class="form-select form-control" id="size" required>
+								<option value="1">Select Company Size</option>
+								<option value="2">1-99</option>
+								<option value="3">100-999</option>
+								<option value="4">1000-4999</option>
+								<option value="5">5000+</option>
+							</select>
+						</div>
+	
+						<!-- Payment Volume -->
+						<div class="mb-3">
+							<label for="pVolume" class="form-label">Payment Volume</label>
+							<select class="form-select form-control" id="pVolume" required>
+								<option value="1">Select a monthly amount</option>
+								<option value="2">Less than GHS 5000</option>
+								<option value="3">GHS 5000 - GHS 15000</option>
+								<option value="4">GHS 15000 - GHS 100000</option>
+								<option value="5">More than GHS 100000</option>
+							</select>
+						</div>
+	
+						<!-- Products -->
+						<div class="mb-3">
+							<label class="form-label">Product(s) you are looking for</label>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="telaPAY"
+								/>
+								<label class="form-check-label" for="telaPAY">telaPAY</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="PayLinkPayQR"
+								/>
+								<label class="form-check-label" for="PayLinkPayQR">PayLink & PayQR</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="BulkTransfer"
+								/>
+								<label class="form-check-label" for="BulkTransfer">Bulk Transfer</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="RemittanceTransfer"
+								/>
+								<label class="form-check-label" for="RemittanceTransfer">Remittance Transfer</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="Other"
+								/>
+								<label class="form-check-label" for="Other">Other</label>
+							</div>
+						</div>
+	
+						<!-- Anything Else -->
+						<div class="mb-3">
+							<label for="optional" class="form-label">Anything else (Optional)</label>
+							<textarea
+								class="form-control"
+								id="optional"
+								rows="3"
+								placeholder="Tell us more about your project, needs, and timeline."
+							></textarea>
+						</div>
+	
+						<!-- Submit Button -->
+						<input
+							class="btn btn-primary rounded-0 text-white fw-bold"
+							type="submit"
+							form="contactSales-form"
+							style="font-size: 16px; padding: 8px 45px;"
+							value="Submit"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Footer Section -->
+		<footer class="bg-body-secondary p-3">
+			<div class="container">
+				<p class="text-center">&copy; PaySwitch Company 2023 | <a href="https://theteller.net/privacy" class="text-primary">Privacy Policy</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
